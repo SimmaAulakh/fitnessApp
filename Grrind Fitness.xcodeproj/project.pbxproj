@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B55B1A96243F93C7005E3225 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */; };
 		B55B1A982440D699005E3225 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B1A972440D699005E3225 /* Constants.swift */; };
+		B5B7FBFA2444880E00423230 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7FBF92444880D00423230 /* HomeViewController.swift */; };
+		B5B7FBFC2445CC5C00423230 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */; };
 		CE58FF8E243E364B009D5E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58FF8D243E364B009D5E0B /* AppDelegate.swift */; };
 		CE58FF90243E364B009D5E0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58FF8F243E364B009D5E0B /* SceneDelegate.swift */; };
 		CE58FF92243E364B009D5E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58FF91243E364B009D5E0B /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		B55B1A972440D699005E3225 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5B7FBF92444880D00423230 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE58FF8A243E364B009D5E0B /* Grrind Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grrind Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE58FF8D243E364B009D5E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE58FF8F243E364B009D5E0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */,
 				CE58FF91243E364B009D5E0B /* ViewController.swift */,
 				CE81E7F4244246EC00F7E126 /* SettingsViewController.swift */,
+				B5B7FBF92444880D00423230 /* HomeViewController.swift */,
+				B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -326,10 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7FE913243E5BB90065623E /* Extentions.swift in Sources */,
+				B5B7FBFC2445CC5C00423230 /* RegisterViewController.swift in Sources */,
 				CE7FE915243E74C60065623E /* ForgotPasswordViewController.swift in Sources */,
 				CE81E7F92442517700F7E126 /* SettingsCell.swift in Sources */,
 				CE58FF92243E364B009D5E0B /* ViewController.swift in Sources */,
 				B55B1A96243F93C7005E3225 /* ResetPasswordViewController.swift in Sources */,
+				B5B7FBFA2444880E00423230 /* HomeViewController.swift in Sources */,
 				B55B1A982440D699005E3225 /* Constants.swift in Sources */,
 				CE58FF8E243E364B009D5E0B /* AppDelegate.swift in Sources */,
 				CE58FF90243E364B009D5E0B /* SceneDelegate.swift in Sources */,

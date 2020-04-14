@@ -52,7 +52,9 @@ class ViewController: UIViewController {
     
     //MARK:- IBActions
     @IBAction func forgotPasswordBtnClicked(_ sender: Any) {
+        
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as? ForgotPasswordViewController
+        
         self.navigationController?.pushViewController(vc!, animated: true)
     }
    

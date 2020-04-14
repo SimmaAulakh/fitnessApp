@@ -15,8 +15,6 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet var settingstableView: UITableView!
      
-    
-    
     override func viewDidLoad() {
            super.viewDidLoad()
 
@@ -27,6 +25,10 @@ class SettingsViewController: UIViewController {
         
        }
     
+    @IBAction func BackSettingsButton(_ sender: Any) {
+      self.navigationController?.popViewController(animated: true)
+        
+    }
     
 }
 
@@ -34,7 +36,9 @@ extension SettingsViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("you tapped me!")
+        
     }
+    
 }
 extension SettingsViewController: UITableViewDataSource{
     
@@ -43,6 +47,7 @@ extension SettingsViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
         if section == 1
         {
              return "About Grrind Fitness"
@@ -76,9 +81,11 @@ extension SettingsViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath) as? SettingsCell
         
         cell?.settingSwitch.isHidden = indexPath == IndexPath(row: 2, section: 0) ? false : true
+        
         cell?.accessoryType = indexPath == IndexPath(row: 2, section: 0) ? .none : .disclosureIndicator
         
         if indexPath.section == 1

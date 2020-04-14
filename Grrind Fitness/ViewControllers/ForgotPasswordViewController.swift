@@ -25,6 +25,7 @@ class ForgotPasswordViewController: UIViewController {
       }
 
       override func viewWillDisappear(_ animated: Bool) {
+        
           super.viewWillDisappear(animated)
         
           navigationController?.setNavigationBarHidden(false   , animated: animated)
@@ -34,7 +35,9 @@ class ForgotPasswordViewController: UIViewController {
                       self.navigationController?.popViewController(animated: true)
     }
     @IBAction func ResetForgotpasswordButton(_ sender: Any) {
+        
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResetPasswordViewController") as? ResetPasswordViewController
+        
                self.navigationController?.pushViewController(vc!, animated: true)
     }
     
