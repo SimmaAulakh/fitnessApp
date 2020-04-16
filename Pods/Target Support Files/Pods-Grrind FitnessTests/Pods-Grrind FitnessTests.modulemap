@@ -1,0 +1,6 @@
+framework module Pods_Grrind_FitnessTests {
+  umbrella header "Pods-Grrind FitnessTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -49,14 +49,14 @@ class TextFieldWithShadow: UITextField {
     
     private func setup() {
         DispatchQueue.main.async{
-            //self.layer.borderWidth = 2
-            //  self.layer.borderColor = #colorLiteral(red: 1, green: 0.7019607843, blue: 0.4862745098, alpha: 1).cgColor
-            self.layer.cornerRadius = 20
+            self.layer.borderWidth = 1
+              self.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.6156862745, blue: 0.2392156863, alpha: 1).cgColor
+            self.layer.cornerRadius = 5
             self.layer.masksToBounds = true
-            self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+            self.layer.shadowColor = #colorLiteral(red: 1, green: 0.7019607843, blue: 0.4862745098, alpha: 1)
             self.layer.shadowOffset = CGSize(width: -1, height: -1)
             self.layer.shadowOpacity = 1
-            self.layer.shadowRadius = 10.0
+            self.layer.shadowRadius = 5
             self.layer.masksToBounds = false
         }
     }
@@ -76,9 +76,11 @@ class TextFieldWithShadow1: UITextField {
     
     private func setup() {
         DispatchQueue.main.async{
-            self.layer.cornerRadius = 20
+            self.layer.borderWidth = 1
+            self.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.6156862745, blue: 0.2392156863, alpha: 1).cgColor
+            self.layer.cornerRadius = 5
             self.layer.masksToBounds = true
-            self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+            self.layer.shadowColor = #colorLiteral(red: 1, green: 0.7019607843, blue: 0.4862745098, alpha: 1)
             self.layer.shadowOffset = CGSize(width: -1, height: -1)
             self.layer.shadowOpacity = 1
             self.layer.shadowRadius = 10.0
@@ -125,6 +127,7 @@ class TextFieldWithShadow2: UIButton {
 extension UIButton{
     func buttonWithBorder(color:UIColor,cornerRadius:Float) {
         DispatchQueue.main.async{
+            
             self.layer.cornerRadius = CGFloat(cornerRadius)
             self.layer.masksToBounds = true
             self.layer.borderWidth = 1.0
@@ -512,17 +515,59 @@ class ButtonwithGradient: UIButton {
             
             self.layer.cornerRadius = 10//self.frame.height/2
                  self.layer.masksToBounds = true
-                 self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+                 self.layer.shadowColor = #colorLiteral(red: 0.4156862745, green: 0.9607843137, blue: 0.9921568627, alpha: 1)
                  self.layer.shadowOffset = CGSize(width: 3, height: 3)
             self.layer.shadowOpacity = 1.0
-                 self.layer.shadowRadius = 10.0
+                 self.layer.shadowRadius = 5.0
                  self.layer.masksToBounds = false
                  self.layer.borderWidth = 2.0
-                 self.layer.borderColor = #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)//UIColor.lightGray.cgColor
+                 self.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)//UIColor.lightGray.cgColor
         }
     }
     
 }
+
+class ButtonwithGradient1: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    private func setup() {
+        DispatchQueue.main.async{
+         let gradient: CAGradientLayer = CAGradientLayer()
+
+            gradient.colors = [#colorLiteral(red: 0.9882352941, green: 0.2862745098, blue: 0.6862745098, alpha: 1).cgColor, #colorLiteral(red: 0.9882352941, green: 0.6196078431, blue: 0.2588235294, alpha: 1).cgColor]
+            gradient.locations = [0.0 , 1.0]
+            gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
+            gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+            gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.size.width, height: self.frame.size.height)
+            gradient.cornerRadius = 10
+            
+            
+
+            self.layer.insertSublayer(gradient, at: 0)
+            
+            self.layer.cornerRadius = 10//self.frame.height/2
+                 self.layer.masksToBounds = true
+                 self.layer.shadowColor = #colorLiteral(red: 0.9960784314, green: 0.6666666667, blue: 0.8352941176, alpha: 1)
+                 self.layer.shadowOffset = CGSize(width: 3, height: 3)
+            self.layer.shadowOpacity = 1.0
+                 self.layer.shadowRadius = 5.0
+                 self.layer.masksToBounds = false
+                 self.layer.borderWidth = 2.0
+                 self.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)//UIColor.lightGray.cgColor
+        }
+    }
+    
+}
+
 
 
 class ViewWithBorder: UIView {
@@ -541,13 +586,13 @@ class ViewWithBorder: UIView {
         DispatchQueue.main.async{
             self.layer.cornerRadius = 10//self.frame.height/2
             self.layer.masksToBounds = true
-            self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+            self.layer.shadowColor = #colorLiteral(red: 0.568627451, green: 0.9215686275, blue: 0.8392156863, alpha: 1)
             self.layer.shadowOffset = CGSize(width: 0, height: 1)
-            self.layer.shadowOpacity = 0.5
+            self.layer.shadowOpacity = 1
             self.layer.shadowRadius = 5.0
             self.layer.masksToBounds = false
             self.layer.borderWidth = 1.0
-            self.layer.borderColor = #colorLiteral(red: 0.7540688515, green: 0.7540867925, blue: 0.7540771365, alpha: 1)//UIColor.lightGray.cgColor
+            self.layer.borderColor = #colorLiteral(red: 0.568627451, green: 0.9215686275, blue: 0.8392156863, alpha: 1)//UIColor.lightGray.cgColor
         }
     }
     

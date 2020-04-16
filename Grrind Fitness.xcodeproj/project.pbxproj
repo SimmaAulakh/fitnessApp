@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54AF18A869FED95DEF4C536F /* Pods_Grrind_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C32E475A99A1AC6035B39D /* Pods_Grrind_FitnessTests.framework */; };
+		6CAD3941229429B54C960BE0 /* Pods_Grrind_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEC45CA2D0286DBC947633E /* Pods_Grrind_Fitness.framework */; };
 		B55B1A96243F93C7005E3225 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */; };
 		B55B1A982440D699005E3225 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B1A972440D699005E3225 /* Constants.swift */; };
 		B57916E52447217F00639FCF /* FacebookRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57916E42447217F00639FCF /* FacebookRegisterViewController.swift */; };
@@ -24,6 +26,7 @@
 		CE7FE915243E74C60065623E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FE914243E74C60065623E /* ForgotPasswordViewController.swift */; };
 		CE81E7F5244246EC00F7E126 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81E7F4244246EC00F7E126 /* SettingsViewController.swift */; };
 		CE81E7F92442517700F7E126 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81E7F82442517700F7E126 /* SettingsCell.swift */; };
+		D9A8C98FEC8C23F895C66B98 /* Pods_Grrind_Fitness_Grrind_FitnessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6A34EB280BDDA695D3F5C3 /* Pods_Grrind_Fitness_Grrind_FitnessUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +47,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19C32E475A99A1AC6035B39D /* Pods_Grrind_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grrind_FitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD904DAC334140124D9EF6E /* Pods-Grrind Fitness-Grrind FitnessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grrind Fitness-Grrind FitnessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Grrind Fitness-Grrind FitnessUITests/Pods-Grrind Fitness-Grrind FitnessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3231BCB3CFA6BBC24DB33CC0 /* Pods-Grrind Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grrind Fitness.debug.xcconfig"; path = "Target Support Files/Pods-Grrind Fitness/Pods-Grrind Fitness.debug.xcconfig"; sourceTree = "<group>"; };
+		3D6A34EB280BDDA695D3F5C3 /* Pods_Grrind_Fitness_Grrind_FitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grrind_Fitness_Grrind_FitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		596916018D92F25177EC5425 /* Pods-Grrind Fitness-Grrind FitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grrind Fitness-Grrind FitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-Grrind Fitness-Grrind FitnessUITests/Pods-Grrind Fitness-Grrind FitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7EEC45CA2D0286DBC947633E /* Pods_Grrind_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grrind_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D2797FFBAE70E4E6D12F58 /* Pods-Grrind FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grrind FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-Grrind FitnessTests/Pods-Grrind FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		B55B1A972440D699005E3225 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B57916E42447217F00639FCF /* FacebookRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookRegisterViewController.swift; sourceTree = "<group>"; };
 		B5B7FBF92444880D00423230 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BC00B21BA7F0164C89F5ADCB /* Pods-Grrind Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grrind Fitness.release.xcconfig"; path = "Target Support Files/Pods-Grrind Fitness/Pods-Grrind Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		CE58FF8A243E364B009D5E0B /* Grrind Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grrind Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE58FF8D243E364B009D5E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE58FF8F243E364B009D5E0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +78,7 @@
 		CE7FE914243E74C60065623E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		CE81E7F4244246EC00F7E126 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CE81E7F82442517700F7E126 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		FEEEC80B89143B9DC47B2213 /* Pods-Grrind FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grrind FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-Grrind FitnessTests/Pods-Grrind FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAD3941229429B54C960BE0 /* Pods_Grrind_Fitness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AF18A869FED95DEF4C536F /* Pods_Grrind_FitnessTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +102,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A8C98FEC8C23F895C66B98 /* Pods_Grrind_Fitness_Grrind_FitnessUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711852B5F79419BB36E4E63F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3231BCB3CFA6BBC24DB33CC0 /* Pods-Grrind Fitness.debug.xcconfig */,
+				BC00B21BA7F0164C89F5ADCB /* Pods-Grrind Fitness.release.xcconfig */,
+				1DD904DAC334140124D9EF6E /* Pods-Grrind Fitness-Grrind FitnessUITests.debug.xcconfig */,
+				596916018D92F25177EC5425 /* Pods-Grrind Fitness-Grrind FitnessUITests.release.xcconfig */,
+				84D2797FFBAE70E4E6D12F58 /* Pods-Grrind FitnessTests.debug.xcconfig */,
+				FEEEC80B89143B9DC47B2213 /* Pods-Grrind FitnessTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8F71146C108F508B24F0FDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC45CA2D0286DBC947633E /* Pods_Grrind_Fitness.framework */,
+				3D6A34EB280BDDA695D3F5C3 /* Pods_Grrind_Fitness_Grrind_FitnessUITests.framework */,
+				19C32E475A99A1AC6035B39D /* Pods_Grrind_FitnessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE58FF81243E364B009D5E0B = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +140,8 @@
 				CE58FFA3243E364E009D5E0B /* Grrind FitnessTests */,
 				CE58FFAE243E364E009D5E0B /* Grrind FitnessUITests */,
 				CE58FF8B243E364B009D5E0B /* Products */,
+				711852B5F79419BB36E4E63F /* Pods */,
+				A8F71146C108F508B24F0FDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE58FFB4243E364E009D5E0B /* Build configuration list for PBXNativeTarget "Grrind Fitness" */;
 			buildPhases = (
+				9868B09EA71AA290C16BDD59 /* [CP] Check Pods Manifest.lock */,
 				CE58FF86243E364B009D5E0B /* Sources */,
 				CE58FF87243E364B009D5E0B /* Frameworks */,
 				CE58FF88243E364B009D5E0B /* Resources */,
+				927857F4D7340D3812740520 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE58FFB7243E364E009D5E0B /* Build configuration list for PBXNativeTarget "Grrind FitnessTests" */;
 			buildPhases = (
+				152A236317FDB7D94D201F5F /* [CP] Check Pods Manifest.lock */,
 				CE58FF9C243E364E009D5E0B /* Sources */,
 				CE58FF9D243E364E009D5E0B /* Frameworks */,
 				CE58FF9E243E364E009D5E0B /* Resources */,
@@ -245,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE58FFBA243E364E009D5E0B /* Build configuration list for PBXNativeTarget "Grrind FitnessUITests" */;
 			buildPhases = (
+				0CD60684D97455B61826384A /* [CP] Check Pods Manifest.lock */,
 				CE58FFA7243E364E009D5E0B /* Sources */,
 				CE58FFA8243E364E009D5E0B /* Frameworks */,
 				CE58FFA9243E364E009D5E0B /* Resources */,
+				25CE39F0EFB0ADF5220EDFA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,6 +374,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CD60684D97455B61826384A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grrind Fitness-Grrind FitnessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		152A236317FDB7D94D201F5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grrind FitnessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25CE39F0EFB0ADF5220EDFA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grrind Fitness-Grrind FitnessUITests/Pods-Grrind Fitness-Grrind FitnessUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grrind Fitness-Grrind FitnessUITests/Pods-Grrind Fitness-Grrind FitnessUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Grrind Fitness-Grrind FitnessUITests/Pods-Grrind Fitness-Grrind FitnessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		927857F4D7340D3812740520 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grrind Fitness/Pods-Grrind Fitness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grrind Fitness/Pods-Grrind Fitness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Grrind Fitness/Pods-Grrind Fitness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9868B09EA71AA290C16BDD59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grrind Fitness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE58FF86243E364B009D5E0B /* Sources */ = {
@@ -516,6 +665,7 @@
 		};
 		CE58FFB5243E364E009D5E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3231BCB3CFA6BBC24DB33CC0 /* Pods-Grrind Fitness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +684,7 @@
 		};
 		CE58FFB6243E364E009D5E0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC00B21BA7F0164C89F5ADCB /* Pods-Grrind Fitness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +703,7 @@
 		};
 		CE58FFB8243E364E009D5E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D2797FFBAE70E4E6D12F58 /* Pods-Grrind FitnessTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -573,6 +725,7 @@
 		};
 		CE58FFB9243E364E009D5E0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEEEC80B89143B9DC47B2213 /* Pods-Grrind FitnessTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,6 +747,7 @@
 		};
 		CE58FFBB243E364E009D5E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD904DAC334140124D9EF6E /* Pods-Grrind Fitness-Grrind FitnessUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -613,6 +767,7 @@
 		};
 		CE58FFBC243E364E009D5E0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596916018D92F25177EC5425 /* Pods-Grrind Fitness-Grrind FitnessUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

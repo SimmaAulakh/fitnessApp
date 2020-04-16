@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xr9-in-zEY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IU7-nq-ycK">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -19,19 +19,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000006" height="251"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECCENTRIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-DP-geI">
-                                <rect key="frame" x="80" y="25" width="160" height="20"/>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
+                                <rect key="frame" x="80" y="21.5" width="160" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Welcome back! Please sign in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2f-TW-Zfg">
-                                <rect key="frame" x="54" y="80" width="212" height="16.5"/>
+                                <rect key="frame" x="54" y="76.5" width="212" height="16.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufc-KT-lPk" customClass="ViewWithShadow" customModule="Grrind_Fitness" customModuleProvider="target">
-                                <rect key="frame" x="30" y="165" width="260" height="238"/>
+                                <rect key="frame" x="30" y="161.5" width="260" height="245"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fB-UA-cIK" customClass="TextFieldWithShadow" customModule="Grrind_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="20" y="48" width="220" height="34"/>
@@ -43,8 +43,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA3-7j-e34">
-                                        <rect key="frame" x="108" y="146" width="132" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA3-7j-e34">
+                                        <rect key="frame" x="108" y="146" width="132" height="31"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,8 +53,8 @@
                                             <action selector="forgotPasswordBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xus-Lj-bQK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeB-eT-Q1e" customClass="ButtonwithGradient" customModule="Grrind_Fitness" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="193" width="220" height="28"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeB-eT-Q1e" customClass="ButtonwithGradient" customModule="Grrind_Fitness" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="193" width="220" height="34"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
                                         <state key="normal" title="SIGN IN">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,7 +66,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="CeB-eT-Q1e" firstAttribute="height" secondItem="XpI-Ho-gjp" secondAttribute="height" multiplier="0.823529" id="5vV-ii-l9M"/>
+                                    <constraint firstItem="CeB-eT-Q1e" firstAttribute="height" secondItem="XpI-Ho-gjp" secondAttribute="height" multiplier="0.823529" constant="6" id="5vV-ii-l9M"/>
                                     <constraint firstAttribute="bottom" secondItem="CeB-eT-Q1e" secondAttribute="bottom" constant="17" id="6UB-6s-3US"/>
                                     <constraint firstItem="XpI-Ho-gjp" firstAttribute="height" secondItem="5fB-UA-cIK" secondAttribute="height" id="98b-r0-LfY"/>
                                     <constraint firstItem="Wgb-jN-GWp" firstAttribute="centerX" secondItem="ufc-KT-lPk" secondAttribute="centerX" id="Doy-Zn-NDx"/>
@@ -300,10 +300,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV7-8J-X0a">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV7-8J-X0a" customClass="ButtonwithGradient1" customModule="Grrind_Fitness" customModuleProvider="target">
                                 <rect key="frame" x="24" y="497" width="272" height="47"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
-                                <state key="normal" title="NEXT" backgroundImage="pinkgradient">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -846,10 +846,10 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTv-4f-hi8">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTv-4f-hi8" customClass="ButtonwithGradient1" customModule="Grrind_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="30" y="522.5" width="260" height="34"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
-                                        <state key="normal" title="NEXT" backgroundImage="pinkgradient">
+                                        <state key="normal" title="NEXT">
                                             <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1112,6 +1112,7 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="c78-91-YU7">
                                         <rect key="frame" x="18" y="498.5" width="284" height="36.5"/>
+                                        <color key="tintColor" red="0.77647058823529413" green="0.33333333333333331" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many minutes would you like to dedicate to each workout?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhR-0q-j0f">
                                         <rect key="frame" x="20" y="598" width="280" height="38.5"/>
@@ -1173,13 +1174,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VKO-Yp-Als">
-                                        <rect key="frame" x="110" y="662.5" width="100" height="89"/>
+                                        <rect key="frame" x="102.5" y="662.5" width="115" height="89"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxo-t9-HTq" customClass="ViewWithBorder" customModule="Grrind_Fitness" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="89"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="56O-zz-RbK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="89"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="89"/>
                                                         <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="50"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1187,6 +1188,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="2oy-wA-Ac9"/>
                                                     <constraint firstItem="56O-zz-RbK" firstAttribute="leading" secondItem="Sxo-t9-HTq" secondAttribute="leading" id="Hir-Ct-b04"/>
                                                     <constraint firstAttribute="bottom" secondItem="56O-zz-RbK" secondAttribute="bottom" id="NuO-NZ-kYW"/>
                                                     <constraint firstAttribute="trailing" secondItem="56O-zz-RbK" secondAttribute="trailing" id="OVU-fa-2TZ"/>
@@ -1194,10 +1196,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fux-wP-Sm9" customClass="ViewWithBorder" customModule="Grrind_Fitness" customModuleProvider="target">
-                                                <rect key="frame" x="57.5" y="0.0" width="42.5" height="89"/>
+                                                <rect key="frame" x="65" y="0.0" width="50" height="89"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjc-aj-1Sv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="89"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="89"/>
                                                         <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="50"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1216,10 +1218,10 @@
                                             <constraint firstAttribute="height" constant="89" id="IKf-P2-ZUJ"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpV-2Q-9Lu">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpV-2Q-9Lu" customClass="ButtonwithGradient1" customModule="Grrind_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="30" y="791.5" width="260" height="51"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
-                                        <state key="normal" title="NEXT" backgroundImage="pinkgradient">
+                                        <state key="normal" title="NEXT">
                                             <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1241,7 +1243,6 @@
                                     <constraint firstItem="2Ee-rC-3Lt" firstAttribute="leading" secondItem="0Gn-me-eHT" secondAttribute="leading" constant="92" id="5ek-rw-heh"/>
                                     <constraint firstItem="IKn-Cw-oAf" firstAttribute="top" secondItem="c78-91-YU7" secondAttribute="bottom" constant="6" id="66G-hR-VSj"/>
                                     <constraint firstItem="c78-91-YU7" firstAttribute="top" secondItem="twQ-Pn-CqQ" secondAttribute="bottom" constant="20" id="8HD-Ix-AfV"/>
-                                    <constraint firstItem="VKO-Yp-Als" firstAttribute="leading" secondItem="0Gn-me-eHT" secondAttribute="leading" constant="110" id="9ts-Om-moD"/>
                                     <constraint firstItem="c78-91-YU7" firstAttribute="leading" secondItem="0Gn-me-eHT" secondAttribute="leading" constant="20" id="C63-nj-ts4"/>
                                     <constraint firstItem="rET-hO-8VT" firstAttribute="leading" secondItem="0Gn-me-eHT" secondAttribute="leading" constant="20" id="G5s-P2-FqP"/>
                                     <constraint firstItem="OcW-up-Fab" firstAttribute="leading" secondItem="0Gn-me-eHT" secondAttribute="leading" constant="121" id="JI3-lv-JHR"/>
@@ -1260,7 +1261,6 @@
                                     <constraint firstItem="xdH-LK-xzo" firstAttribute="leading" secondItem="0Gn-me-eHT" secondAttribute="leading" constant="20" id="ZJc-La-Pi8"/>
                                     <constraint firstItem="rET-hO-8VT" firstAttribute="top" secondItem="FrI-XR-fp1" secondAttribute="bottom" constant="25" id="a3W-pE-pqe"/>
                                     <constraint firstItem="uhR-0q-j0f" firstAttribute="top" secondItem="IKn-Cw-oAf" secondAttribute="bottom" constant="35" id="eoW-NW-fFW"/>
-                                    <constraint firstAttribute="trailing" secondItem="VKO-Yp-Als" secondAttribute="trailing" constant="110" id="fQ8-eS-JDM"/>
                                     <constraint firstItem="FrI-XR-fp1" firstAttribute="top" secondItem="rjW-JV-Iva" secondAttribute="bottom" constant="15" id="g78-dC-Biu"/>
                                     <constraint firstItem="VKO-Yp-Als" firstAttribute="centerX" secondItem="0Gn-me-eHT" secondAttribute="centerX" id="hrM-GY-KRc"/>
                                     <constraint firstItem="xpV-2Q-9Lu" firstAttribute="leading" secondItem="0Gn-me-eHT" secondAttribute="leading" constant="30" id="jRm-g6-pwY"/>
@@ -1509,10 +1509,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brR-VU-YVT">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brR-VU-YVT" customClass="ButtonwithGradient1" customModule="Grrind_Fitness" customModuleProvider="target">
                                 <rect key="frame" x="30" y="475.5" width="260" height="42.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
-                                <state key="normal" title="SUBMIT" backgroundImage="pinkgradient">
+                                <state key="normal" title="SUBMIT">
                                     <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1689,13 +1689,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundgradient" translatesAutoresizingMaskIntoConstraints="NO" id="Y45-TT-gW9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cny-z6-zfD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHk-ME-Iu8">
-                                        <rect key="frame" x="20" y="31.5" width="30" height="30"/>
+                                        <rect key="frame" x="20" y="23" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="V6Q-GT-SxA"/>
                                             <constraint firstAttribute="height" constant="30" id="Vsc-v0-wDp"/>
@@ -1706,7 +1706,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBw-FH-O5B">
-                                        <rect key="frame" x="270" y="31.5" width="30" height="30"/>
+                                        <rect key="frame" x="270" y="23" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="MxJ-G2-haz"/>
                                             <constraint firstAttribute="height" constant="30" id="fTK-hZ-R37"/>
@@ -1715,7 +1715,7 @@
                                         <state key="normal" image="profileicon"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECCENTRIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhE-I8-rUh">
-                                        <rect key="frame" x="103" y="34.5" width="114.5" height="24"/>
+                                        <rect key="frame" x="103" y="26" width="114.5" height="24"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1732,7 +1732,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUc-IF-0iD">
-                                <rect key="frame" x="0.0" y="79" width="320" height="821"/>
+                                <rect key="frame" x="0.0" y="61.5" width="320" height="638.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back, Kate!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pr-GU-HEo">
                                         <rect key="frame" x="20" y="25" width="158.5" height="20.5"/>
@@ -1753,10 +1753,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxq-uc-MCd">
-                                        <rect key="frame" x="20" y="141" width="280" height="98"/>
+                                        <rect key="frame" x="20" y="141" width="280" height="76"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kp-7C-5x7">
-                                                <rect key="frame" x="10" y="26.5" width="15" height="15"/>
+                                                <rect key="frame" x="10" y="15.5" width="15" height="15"/>
                                                 <color key="backgroundColor" red="0.98039215686274506" green="0.0" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="MKJ-GA-Duf"/>
@@ -1772,7 +1772,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vw2-rh-Qne">
-                                                <rect key="frame" x="10" y="56.5" width="15" height="15"/>
+                                                <rect key="frame" x="10" y="45.5" width="15" height="15"/>
                                                 <color key="backgroundColor" red="1" green="0.55294117647058827" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="FAo-8l-Xpg"/>
@@ -1788,7 +1788,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcO-sX-1EK">
-                                                <rect key="frame" x="152" y="56.5" width="15" height="15"/>
+                                                <rect key="frame" x="152" y="45.5" width="15" height="15"/>
                                                 <color key="backgroundColor" red="0.80392156862745101" green="0.0" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="Dde-SL-Onp"/>
@@ -1804,7 +1804,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOb-jj-cAb">
-                                                <rect key="frame" x="152" y="26.5" width="15" height="15"/>
+                                                <rect key="frame" x="152" y="15.5" width="15" height="15"/>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="LYv-Dg-FEn"/>
@@ -1820,7 +1820,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELEGANT SHOULDERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-oC-zpH">
-                                                <rect key="frame" x="33" y="22.5" width="111" height="23"/>
+                                                <rect key="frame" x="33" y="14" width="111" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="G85-Mx-gSd"/>
                                                 </constraints>
@@ -1829,7 +1829,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLATTER TUMMY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgM-ot-gYg">
-                                                <rect key="frame" x="33" y="52.5" width="82.5" height="23"/>
+                                                <rect key="frame" x="33" y="44" width="82.5" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="CI1-FX-ey1"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="KoE-Cb-XS0"/>
@@ -1839,7 +1839,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURGLASS FIGURE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0k-Jb-mbd">
-                                                <rect key="frame" x="175" y="22.5" width="101.5" height="23"/>
+                                                <rect key="frame" x="175" y="14" width="101.5" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="vSa-Du-heX"/>
                                                     <constraint firstAttribute="height" constant="18" id="yM7-rx-Yq0"/>
@@ -1849,7 +1849,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERKIER BUTT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHM-er-rcy">
-                                                <rect key="frame" x="175" y="52.5" width="70.5" height="23"/>
+                                                <rect key="frame" x="175" y="44" width="70.5" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="RXh-yF-KHX"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="18" id="c3q-oS-ESA"/>
@@ -1889,7 +1889,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bu-b8-hhW">
-                                        <rect key="frame" x="20" y="259" width="280" height="355"/>
+                                        <rect key="frame" x="20" y="237" width="280" height="355"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much time do you have?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEI-Ni-1PT">
                                                 <rect key="frame" x="36" y="14" width="208" height="19.5"/>
@@ -1913,6 +1913,7 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="IOR-n6-Plv" secondAttribute="bottom" id="0w8-hm-0Vu"/>
+                                                            <constraint firstAttribute="width" constant="50.5" id="Bkp-4E-RQS"/>
                                                             <constraint firstAttribute="trailing" secondItem="IOR-n6-Plv" secondAttribute="trailing" id="RcU-RM-rD4"/>
                                                             <constraint firstItem="IOR-n6-Plv" firstAttribute="top" secondItem="mPh-Qa-gxH" secondAttribute="top" id="h4n-l3-oQ3"/>
                                                             <constraint firstItem="IOR-n6-Plv" firstAttribute="leading" secondItem="mPh-Qa-gxH" secondAttribute="leading" id="xKG-cP-Nkr"/>
@@ -2001,7 +2002,6 @@
                                             <constraint firstItem="Eed-52-brD" firstAttribute="top" secondItem="Wit-u2-3te" secondAttribute="bottom" constant="17" id="2dB-e6-p7g"/>
                                             <constraint firstAttribute="height" constant="355" id="3xx-Z1-7k3"/>
                                             <constraint firstItem="1MC-Z0-3Ff" firstAttribute="top" secondItem="7k8-nF-4IC" secondAttribute="bottom" constant="16" id="5Qh-pa-D59"/>
-                                            <constraint firstItem="4qi-e4-Q2K" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="82" id="8wH-uU-E5n"/>
                                             <constraint firstItem="oHm-3j-LSu" firstAttribute="top" secondItem="7k8-nF-4IC" secondAttribute="bottom" constant="33" id="DLr-Gl-P4s"/>
                                             <constraint firstItem="Wit-u2-3te" firstAttribute="top" secondItem="Z4B-PT-EJu" secondAttribute="bottom" constant="8" id="HaS-eB-fNq"/>
                                             <constraint firstItem="EEI-Ni-1PT" firstAttribute="centerX" secondItem="6bu-b8-hhW" secondAttribute="centerX" id="JQB-y3-n1w"/>
@@ -2012,7 +2012,6 @@
                                             <constraint firstAttribute="trailing" secondItem="Z4B-PT-EJu" secondAttribute="trailing" constant="20" id="ZQc-Pk-Ejf"/>
                                             <constraint firstItem="1MC-Z0-3Ff" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="45" id="b6n-B1-Gmm"/>
                                             <constraint firstItem="4qi-e4-Q2K" firstAttribute="centerX" secondItem="6bu-b8-hhW" secondAttribute="centerX" id="b9Q-v3-vnU"/>
-                                            <constraint firstAttribute="trailing" secondItem="4qi-e4-Q2K" secondAttribute="trailing" constant="82" id="cQo-28-Ibt"/>
                                             <constraint firstItem="Z4B-PT-EJu" firstAttribute="top" secondItem="oHm-3j-LSu" secondAttribute="bottom" constant="17.5" id="ca3-HY-rON"/>
                                             <constraint firstItem="Z4B-PT-EJu" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="20" id="cwa-mj-i4Q"/>
                                             <constraint firstItem="Wit-u2-3te" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="20" id="dan-Xc-0hy"/>
@@ -2036,38 +2035,38 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5s-yT-Nmi">
-                                        <rect key="frame" x="20" y="637" width="280" height="131"/>
+                                        <rect key="frame" x="20" y="615" width="280" height="102"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help me increase my mobility" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbM-8a-zMz">
-                                                <rect key="frame" x="8" y="24.5" width="182.5" height="17"/>
+                                                <rect key="frame" x="8" y="10" width="182.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Pre-Workout Stretches)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObK-zf-5IF">
-                                                <rect key="frame" x="8" y="42.5" width="109.5" height="12"/>
+                                                <rect key="frame" x="8" y="28" width="109.5" height="12"/>
                                                 <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="10"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help me reduce muscle fatigue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cej-Yk-9qq">
-                                                <rect key="frame" x="8" y="74.5" width="189" height="17"/>
+                                                <rect key="frame" x="8" y="60" width="189" height="17"/>
                                                 <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Post-Workout Stretches)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-j8-EOa">
-                                                <rect key="frame" x="8" y="91.5" width="113.5" height="12"/>
+                                                <rect key="frame" x="8" y="77" width="113.5" height="12"/>
                                                 <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="10"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Odc-tX-Spz">
-                                                <rect key="frame" x="211" y="22.5" width="51" height="31"/>
+                                                <rect key="frame" x="211" y="8" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.19607843137254902" green="0.83529411764705885" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PM4-2s-yxc">
-                                                <rect key="frame" x="211" y="74.5" width="51" height="31"/>
+                                                <rect key="frame" x="211" y="60" width="51" height="31"/>
                                                 <color key="tintColor" red="0.19607843137254902" green="0.83529411764705885" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="onTintColor" red="0.19607843137254902" green="0.83529411764705885" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
@@ -2094,15 +2093,15 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre- and Post-Workout stretches are highly recommended to help prevent injury." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcs-8M-V5R">
-                                        <rect key="frame" x="24" y="783" width="272" height="31.5"/>
+                                        <rect key="frame" x="24" y="732" width="272" height="31.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="0.80000000000000004" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHR-OK-8kK">
-                                        <rect key="frame" x="30" y="828" width="260" height="66"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHR-OK-8kK" customClass="ButtonwithGradient1" customModule="Grrind_Fitness" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="777" width="260" height="51.5"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
-                                        <state key="normal" title="LET'S GO" backgroundImage="pinkgradient">
+                                        <state key="normal" title="LET'S GO">
                                             <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -2451,16 +2450,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mI-MN-4gk" customClass="ViewWithGradient" customModule="Grrind_Fitness" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FACEBOOK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhK-1c-eYs">
-                                        <rect key="frame" x="113" y="31.5" width="94" height="20.5"/>
+                                        <rect key="frame" x="113" y="29" width="94" height="20.5"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
                                         <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oD-0O-fPq">
-                                        <rect key="frame" x="14" y="13" width="49.5" height="50.5"/>
+                                        <rect key="frame" x="14" y="13" width="49.5" height="46"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2481,7 +2480,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-FK-0Fg">
-                                <rect key="frame" x="0.0" y="63.5" width="320" height="636.5"/>
+                                <rect key="frame" x="0.0" y="59" width="320" height="588.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="xUE-xr-GA6">
                                         <rect key="frame" x="110" y="25" width="100" height="100"/>
@@ -2508,10 +2507,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="R3i-6S-Z6D">
-                                        <rect key="frame" x="20" y="222.5" width="280" height="320"/>
+                                        <rect key="frame" x="20" y="222.5" width="280" height="296"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKA-nP-5Bf">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="GJY-Dk-3rO"/>
                                                 </constraints>
@@ -2519,40 +2518,40 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-0q-k4y">
-                                                <rect key="frame" x="0.0" y="55" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="51" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBm-Qg-Qyr">
-                                                <rect key="frame" x="0.0" y="110" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="102" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd / mm / yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyn-jd-qEL">
-                                                <rect key="frame" x="0.0" y="165" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="153" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MUW-2E-Rrv">
-                                                <rect key="frame" x="0.0" y="220" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="204" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-cU-KlE">
-                                                <rect key="frame" x="0.0" y="275" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="255" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By creating an account, you agree to Eccentric's" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvz-y4-OwV">
-                                        <rect key="frame" x="30" y="557.5" width="260" height="15"/>
+                                        <rect key="frame" x="30" y="533.5" width="260" height="15"/>
                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="6Rg-IJ-l6k">
-                                        <rect key="frame" x="65" y="580.5" width="190" height="14"/>
+                                        <rect key="frame" x="65" y="556.5" width="190" height="14"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TN-AC-ZhU">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="14"/>
@@ -2585,13 +2584,13 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UZ-2L-S6z">
-                                        <rect key="frame" x="25" y="604.5" width="270" height="40"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UZ-2L-S6z" customClass="ButtonwithGradient" customModule="Grrind_Fitness" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="580.5" width="270" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nof-GD-aNe"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="21"/>
-                                        <state key="normal" title="NEXT" backgroundImage="signinbutton">
+                                        <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -2682,10 +2681,10 @@
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-L1-RoE">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-L1-RoE" customClass="ButtonwithGradient1" customModule="Grrind_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="20" y="105.5" width="237" height="30"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="15"/>
-                                        <state key="normal" title="OKAY" backgroundImage="pinkgradient">
+                                        <state key="normal" title="OKAY">
                                             <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -2754,13 +2753,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys7-1z-RfQ">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys7-1z-RfQ" customClass="ButtonwithGradient" customModule="Grrind_Fitness" customModuleProvider="target">
                                 <rect key="frame" x="25" y="263" width="270" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Fhc-Ht-D5z"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="21"/>
-                                <state key="normal" title="RESET" backgroundImage="signinbutton">
+                                <state key="normal" title="RESET">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -2834,6 +2830,7 @@
                             <constraint firstItem="ys7-1z-RfQ" firstAttribute="centerX" secondItem="ESi-vU-kP8" secondAttribute="centerX" id="gBo-Eu-AEH"/>
                             <constraint firstItem="KGx-zp-QFc" firstAttribute="top" secondItem="ESi-vU-kP8" secondAttribute="top" id="iff-Xa-fwr"/>
                             <constraint firstItem="NCe-p2-1FE" firstAttribute="leading" secondItem="yX1-qo-rHk" secondAttribute="leading" constant="13" id="jZv-da-dnO"/>
+                            <constraint firstItem="ys7-1z-RfQ" firstAttribute="height" secondItem="mXu-NL-fFf" secondAttribute="height" multiplier="0.822222" constant="3" id="kCm-Uc-n0i"/>
                             <constraint firstItem="yX1-qo-rHk" firstAttribute="trailing" secondItem="NCe-p2-1FE" secondAttribute="trailing" constant="13" id="n0k-e9-0TS"/>
                             <constraint firstItem="KGx-zp-QFc" firstAttribute="height" secondItem="ESi-vU-kP8" secondAttribute="height" multiplier="0.112676" id="qte-q7-L5x"/>
                             <constraint firstItem="mXu-NL-fFf" firstAttribute="leading" secondItem="yX1-qo-rHk" secondAttribute="leading" constant="13" id="yXf-SY-Uni"/>
@@ -2863,10 +2860,10 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4a-aZ-fxf">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4a-aZ-fxf" customClass="ButtonwithGradient" customModule="Grrind_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="20" y="177" width="230" height="36"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
-                                        <state key="normal" title="BACK TO SIGN IN" backgroundImage="signinbutton">
+                                        <state key="normal" title="BACK TO SIGN IN">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -2957,10 +2954,10 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5B-Sf-T4o">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5B-Sf-T4o" customClass="ButtonwithGradient" customModule="Grrind_Fitness" customModuleProvider="target">
                                 <rect key="frame" x="20" y="340" width="280" height="36.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="RESET" backgroundImage="signinbutton">
+                                <state key="normal" title="RESET">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -3020,10 +3017,10 @@
                             <constraint firstItem="8OC-Jr-jze" firstAttribute="height" secondItem="wYI-8p-OOP" secondAttribute="height" multiplier="0.0316901" id="duP-2r-gfg"/>
                             <constraint firstItem="85M-uB-6OO" firstAttribute="leading" secondItem="wYI-8p-OOP" secondAttribute="leading" id="e7i-kg-Vtz"/>
                             <constraint firstItem="haA-IT-1DY" firstAttribute="top" secondItem="JGK-cH-Qmv" secondAttribute="bottom" constant="20" id="eBM-ux-Z9X"/>
+                            <constraint firstItem="P5B-Sf-T4o" firstAttribute="height" secondItem="haA-IT-1DY" secondAttribute="height" id="i5N-rB-vhK"/>
                             <constraint firstItem="haA-IT-1DY" firstAttribute="height" secondItem="JGK-cH-Qmv" secondAttribute="height" id="iQl-Jj-RkA"/>
                             <constraint firstItem="8OC-Jr-jze" firstAttribute="centerX" secondItem="wYI-8p-OOP" secondAttribute="centerX" id="ini-fr-oj8"/>
                             <constraint firstItem="JGK-cH-Qmv" firstAttribute="height" secondItem="wYI-8p-OOP" secondAttribute="height" multiplier="0.0640141" id="k7Y-Sy-h6a"/>
-                            <constraint firstItem="P5B-Sf-T4o" firstAttribute="height" secondItem="wYI-8p-OOP" secondAttribute="height" multiplier="0.0640141" id="l9U-UI-Rmq"/>
                             <constraint firstItem="P5B-Sf-T4o" firstAttribute="top" secondItem="d1f-Se-uYj" secondAttribute="bottom" constant="40" id="pvW-M0-ivg"/>
                             <constraint firstItem="d1f-Se-uYj" firstAttribute="leading" secondItem="WW0-7D-D0Q" secondAttribute="leading" constant="16" id="ry1-Ya-WMt"/>
                             <constraint firstItem="d1f-Se-uYj" firstAttribute="height" secondItem="wYI-8p-OOP" secondAttribute="height" multiplier="0.102747" id="sgp-cO-i8l"/>
@@ -3084,7 +3081,6 @@
         <image name="female-gender" width="48" height="48"/>
         <image name="logo" width="101" height="163"/>
         <image name="male-gender" width="48" height="48"/>
-        <image name="pinkgradient" width="100" height="30"/>
         <image name="profileicon" width="45" height="45"/>
         <image name="settingsicon " width="48" height="48"/>
         <image name="signinbutton" width="100" height="25"/>

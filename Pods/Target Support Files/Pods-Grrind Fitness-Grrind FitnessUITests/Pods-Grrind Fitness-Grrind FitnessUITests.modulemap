@@ -1,0 +1,6 @@
+framework module Pods_Grrind_Fitness_Grrind_FitnessUITests {
+  umbrella header "Pods-Grrind Fitness-Grrind FitnessUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
