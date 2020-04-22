@@ -89,7 +89,8 @@ class TextFieldWithShadow1: UITextField {
     }
     
 }
-class TextFieldWithShadow2: UIButton {
+
+class TextFieldWithShadow2: UITextField {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -103,21 +104,16 @@ class TextFieldWithShadow2: UIButton {
     
     private func setup() {
         DispatchQueue.main.async{
-            self.layer.borderWidth = 2
-            self.layer.borderColor = UIColor.white.cgColor
-            self.layer.cornerRadius = 10
-           self.clipsToBounds = true
-            self.layer.masksToBounds = false
-            self.layer.shadowRadius = 10.0
-            self.layer.shadowOpacity = 1.0
-            self.layer.shadowOffset = CGSize(width: 3, height: 3)
-            self.layer.shadowColor = UIColor.gray.cgColor
-            //self.layer.masksToBounds = false
-           // self.layer.borderWidth = 2
-            //self.layer.borderColor = UIColor.white.cgColor
-            //self.clipsToBounds = true
+            self.layer.borderWidth = 1
+              self.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.6156862745, blue: 0.2392156863, alpha: 1).cgColor
+            self.layer.cornerRadius = 5
+            self.layer.masksToBounds = true
+            //self.layer.shadowColor = #colorLiteral(red: 1, green: 0.7019607843, blue: 0.4862745098, alpha: 1)
+            //self.layer.shadowOffset = CGSize(width: -1, height: -1)
+           // self.layer.shadowOpacity = 1
+           // self.layer.shadowRadius = 5
+           // self.layer.masksToBounds = false
         }
-        
     }
     
 }
