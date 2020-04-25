@@ -12,6 +12,26 @@
 		B55B1A96243F93C7005E3225 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */; };
 		B55B1A982440D699005E3225 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B1A972440D699005E3225 /* Constants.swift */; };
 		B57916E52447217F00639FCF /* FacebookRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57916E42447217F00639FCF /* FacebookRegisterViewController.swift */; };
+		B5AE8B8524546098000D4C87 /* UpdateEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B8424546098000D4C87 /* UpdateEmailVC.swift */; };
+		B5AE8B87245461C8000D4C87 /* UpdatePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B86245461C8000D4C87 /* UpdatePasswordVC.swift */; };
+		B5AE8B892454620D000D4C87 /* PasswordResetPopUpVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B882454620D000D4C87 /* PasswordResetPopUpVc.swift */; };
+		B5AE8B8B24546294000D4C87 /* OnBoardStepOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B8A24546294000D4C87 /* OnBoardStepOneVC.swift */; };
+		B5AE8B8D245462B1000D4C87 /* OnBoardStepTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B8C245462B1000D4C87 /* OnBoardStepTwoVC.swift */; };
+		B5AE8B8F245462C7000D4C87 /* OnBoardStepThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B8E245462C6000D4C87 /* OnBoardStepThreeVC.swift */; };
+		B5AE8B9124546302000D4C87 /* TermsOfUseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B9024546302000D4C87 /* TermsOfUseVC.swift */; };
+		B5AE8B9324546321000D4C87 /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B9224546321000D4C87 /* PrivacyPolicyVC.swift */; };
+		B5AE8B952454633C000D4C87 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B942454633C000D4C87 /* ContactUsVC.swift */; };
+		B5AE8B9724546374000D4C87 /* FeedBackSentPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B9624546374000D4C87 /* FeedBackSentPopUpVC.swift */; };
+		B5AE8B9924546394000D4C87 /* CheckYourEmailPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B9824546394000D4C87 /* CheckYourEmailPopUpVC.swift */; };
+		B5AE8B9B245463B9000D4C87 /* UnSavedChangesPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B9A245463B9000D4C87 /* UnSavedChangesPopUpVC.swift */; };
+		B5AE8B9D245468AD000D4C87 /* SettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B9C245468AD000D4C87 /* SettingsVM.swift */; };
+		B5AE8B9F2454704F000D4C87 /* AccountInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8B9E2454704F000D4C87 /* AccountInfoVM.swift */; };
+		B5AE8BA124547268000D4C87 /* ContactUsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8BA024547268000D4C87 /* ContactUsVM.swift */; };
+		B5AE8BA5245475D1000D4C87 /* placeHolderPushUp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B5AE8BA4245475D1000D4C87 /* placeHolderPushUp.mp4 */; };
+		B5AE8BA724547A35000D4C87 /* WorkoutVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8BA624547A35000D4C87 /* WorkoutVideoVC.swift */; };
+		B5AE8BA924547A85000D4C87 /* WorkOutVideoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8BA824547A85000D4C87 /* WorkOutVideoVM.swift */; };
+		B5AE8BAB2454B5D7000D4C87 /* AudioSettingsPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8BAA2454B5D7000D4C87 /* AudioSettingsPopupVC.swift */; };
+		B5AE8BAD2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8BAC2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift */; };
 		B5B7FBFA2444880E00423230 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7FBF92444880D00423230 /* HomeViewController.swift */; };
 		B5B7FBFC2445CC5C00423230 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */; };
 		B5F94BA7245073F60011A593 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F94BA6245073F60011A593 /* AccountInfoViewController.swift */; };
@@ -59,6 +79,26 @@
 		B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		B55B1A972440D699005E3225 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B57916E42447217F00639FCF /* FacebookRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookRegisterViewController.swift; sourceTree = "<group>"; };
+		B5AE8B8424546098000D4C87 /* UpdateEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmailVC.swift; sourceTree = "<group>"; };
+		B5AE8B86245461C8000D4C87 /* UpdatePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordVC.swift; sourceTree = "<group>"; };
+		B5AE8B882454620D000D4C87 /* PasswordResetPopUpVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetPopUpVc.swift; sourceTree = "<group>"; };
+		B5AE8B8A24546294000D4C87 /* OnBoardStepOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardStepOneVC.swift; sourceTree = "<group>"; };
+		B5AE8B8C245462B1000D4C87 /* OnBoardStepTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardStepTwoVC.swift; sourceTree = "<group>"; };
+		B5AE8B8E245462C6000D4C87 /* OnBoardStepThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardStepThreeVC.swift; sourceTree = "<group>"; };
+		B5AE8B9024546302000D4C87 /* TermsOfUseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseVC.swift; sourceTree = "<group>"; };
+		B5AE8B9224546321000D4C87 /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
+		B5AE8B942454633C000D4C87 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		B5AE8B9624546374000D4C87 /* FeedBackSentPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSentPopUpVC.swift; sourceTree = "<group>"; };
+		B5AE8B9824546394000D4C87 /* CheckYourEmailPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckYourEmailPopUpVC.swift; sourceTree = "<group>"; };
+		B5AE8B9A245463B9000D4C87 /* UnSavedChangesPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnSavedChangesPopUpVC.swift; sourceTree = "<group>"; };
+		B5AE8B9C245468AD000D4C87 /* SettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVM.swift; sourceTree = "<group>"; };
+		B5AE8B9E2454704F000D4C87 /* AccountInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoVM.swift; sourceTree = "<group>"; };
+		B5AE8BA024547268000D4C87 /* ContactUsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVM.swift; sourceTree = "<group>"; };
+		B5AE8BA4245475D1000D4C87 /* placeHolderPushUp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = placeHolderPushUp.mp4; sourceTree = "<group>"; };
+		B5AE8BA624547A35000D4C87 /* WorkoutVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVideoVC.swift; sourceTree = "<group>"; };
+		B5AE8BA824547A85000D4C87 /* WorkOutVideoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutVideoVM.swift; sourceTree = "<group>"; };
+		B5AE8BAA2454B5D7000D4C87 /* AudioSettingsPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSettingsPopupVC.swift; sourceTree = "<group>"; };
+		B5AE8BAC2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLengthPopupVC.swift; sourceTree = "<group>"; };
 		B5B7FBF92444880D00423230 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B5F94BA6245073F60011A593 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +176,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B5AE8BA2245475B2000D4C87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE8BA3245475BC000D4C87 /* Videos */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5AE8BA3245475BC000D4C87 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE8BA4245475D1000D4C87 /* placeHolderPushUp.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		CE58FF81243E364B009D5E0B = {
 			isa = PBXGroup;
 			children = (
@@ -161,11 +217,12 @@
 		CE58FF8C243E364B009D5E0B /* Grrind Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				B5AE8BA2245475B2000D4C87 /* Resources */,
+				CE7FE911243E5B850065623E /* HelpingClasses */,
 				CE81E7F62442513F00F7E126 /* Cells */,
 				CE736951243FD1C100502D10 /* Models */,
 				CE736950243FD1B400502D10 /* ViewModels */,
 				CE73694F243FD18700502D10 /* ViewControllers */,
-				CE7FE911243E5B850065623E /* HelpingClasses */,
 				CE58FF8D243E364B009D5E0B /* AppDelegate.swift */,
 				CE58FF8F243E364B009D5E0B /* SceneDelegate.swift */,
 				CE58FF93243E364B009D5E0B /* Main.storyboard */,
@@ -205,6 +262,21 @@
 				B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */,
 				B57916E42447217F00639FCF /* FacebookRegisterViewController.swift */,
 				B5F94BA6245073F60011A593 /* AccountInfoViewController.swift */,
+				B5AE8B8424546098000D4C87 /* UpdateEmailVC.swift */,
+				B5AE8B86245461C8000D4C87 /* UpdatePasswordVC.swift */,
+				B5AE8B882454620D000D4C87 /* PasswordResetPopUpVc.swift */,
+				B5AE8B8A24546294000D4C87 /* OnBoardStepOneVC.swift */,
+				B5AE8B8C245462B1000D4C87 /* OnBoardStepTwoVC.swift */,
+				B5AE8B8E245462C6000D4C87 /* OnBoardStepThreeVC.swift */,
+				B5AE8B9024546302000D4C87 /* TermsOfUseVC.swift */,
+				B5AE8B9224546321000D4C87 /* PrivacyPolicyVC.swift */,
+				B5AE8B942454633C000D4C87 /* ContactUsVC.swift */,
+				B5AE8B9624546374000D4C87 /* FeedBackSentPopUpVC.swift */,
+				B5AE8B9824546394000D4C87 /* CheckYourEmailPopUpVC.swift */,
+				B5AE8B9A245463B9000D4C87 /* UnSavedChangesPopUpVC.swift */,
+				B5AE8BA624547A35000D4C87 /* WorkoutVideoVC.swift */,
+				B5AE8BAA2454B5D7000D4C87 /* AudioSettingsPopupVC.swift */,
+				B5AE8BAC2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -212,6 +284,10 @@
 		CE736950243FD1B400502D10 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B5AE8B9C245468AD000D4C87 /* SettingsVM.swift */,
+				B5AE8B9E2454704F000D4C87 /* AccountInfoVM.swift */,
+				B5AE8BA024547268000D4C87 /* ContactUsVM.swift */,
+				B5AE8BA824547A85000D4C87 /* WorkOutVideoVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -361,6 +437,7 @@
 				CE58FF9A243E364D009D5E0B /* LaunchScreen.storyboard in Resources */,
 				CE58FF97243E364D009D5E0B /* Assets.xcassets in Resources */,
 				CE58FF95243E364B009D5E0B /* Main.storyboard in Resources */,
+				B5AE8BA5245475D1000D4C87 /* placeHolderPushUp.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,17 +565,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AE8BAD2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift in Sources */,
+				B5AE8BA124547268000D4C87 /* ContactUsVM.swift in Sources */,
+				B5AE8B9724546374000D4C87 /* FeedBackSentPopUpVC.swift in Sources */,
+				B5AE8B87245461C8000D4C87 /* UpdatePasswordVC.swift in Sources */,
+				B5AE8BA924547A85000D4C87 /* WorkOutVideoVM.swift in Sources */,
 				CE7FE913243E5BB90065623E /* Extentions.swift in Sources */,
+				B5AE8BAB2454B5D7000D4C87 /* AudioSettingsPopupVC.swift in Sources */,
+				B5AE8B8D245462B1000D4C87 /* OnBoardStepTwoVC.swift in Sources */,
+				B5AE8B9B245463B9000D4C87 /* UnSavedChangesPopUpVC.swift in Sources */,
 				B5F94BA9245085790011A593 /* AccountInfoCell.swift in Sources */,
+				B5AE8B9F2454704F000D4C87 /* AccountInfoVM.swift in Sources */,
 				B5B7FBFC2445CC5C00423230 /* RegisterViewController.swift in Sources */,
+				B5AE8B892454620D000D4C87 /* PasswordResetPopUpVc.swift in Sources */,
+				B5AE8B9D245468AD000D4C87 /* SettingsVM.swift in Sources */,
+				B5AE8B9924546394000D4C87 /* CheckYourEmailPopUpVC.swift in Sources */,
 				CE7FE915243E74C60065623E /* ForgotPasswordViewController.swift in Sources */,
 				CE81E7F92442517700F7E126 /* SettingsCell.swift in Sources */,
 				B5F94BA7245073F60011A593 /* AccountInfoViewController.swift in Sources */,
+				B5AE8B8F245462C7000D4C87 /* OnBoardStepThreeVC.swift in Sources */,
 				CE58FF92243E364B009D5E0B /* ViewController.swift in Sources */,
+				B5AE8B8B24546294000D4C87 /* OnBoardStepOneVC.swift in Sources */,
+				B5AE8B952454633C000D4C87 /* ContactUsVC.swift in Sources */,
 				B55B1A96243F93C7005E3225 /* ResetPasswordViewController.swift in Sources */,
 				B5B7FBFA2444880E00423230 /* HomeViewController.swift in Sources */,
 				B55B1A982440D699005E3225 /* Constants.swift in Sources */,
+				B5AE8B9324546321000D4C87 /* PrivacyPolicyVC.swift in Sources */,
+				B5AE8B8524546098000D4C87 /* UpdateEmailVC.swift in Sources */,
 				CE58FF8E243E364B009D5E0B /* AppDelegate.swift in Sources */,
+				B5AE8B9124546302000D4C87 /* TermsOfUseVC.swift in Sources */,
+				B5AE8BA724547A35000D4C87 /* WorkoutVideoVC.swift in Sources */,
 				B57916E52447217F00639FCF /* FacebookRegisterViewController.swift in Sources */,
 				CE58FF90243E364B009D5E0B /* SceneDelegate.swift in Sources */,
 				CE81E7F5244246EC00F7E126 /* SettingsViewController.swift in Sources */,

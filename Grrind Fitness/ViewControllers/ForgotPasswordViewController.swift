@@ -40,5 +40,10 @@ class ForgotPasswordViewController: UIViewController {
         
                self.navigationController?.pushViewController(vc!, animated: true)
     }
+    @IBAction func SignInbtn(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+               
+                      self.navigationController?.popViewController(animated: true)
+    }
     
 }

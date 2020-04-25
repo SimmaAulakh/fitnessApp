@@ -1,32 +1,32 @@
 //
-//  AccountInfoViewController.swift
+//  ContactUsVC.swift
 //  Grrind Fitness
 //
-//  Created by Simranjeet Aulakh on 22/04/20.
+//  Created by Simranjeet Aulakh on 25/04/20.
 //  Copyright © 2020 aulakh. All rights reserved.
 //
 
 import UIKit
 
-class AccountInfoViewController: UIViewController {
+class ContactUsVC: UIViewController {
     
     //MARK:- IBOutlets
-    @IBOutlet weak var AccountInfoTableView: UITableView!
     
     //MARK:- Variables
-    let viewObj = AccountInfoVM()
-    
+    let viewObj = ContactUsVM()
+
+    //MARK:- View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        AccountInfoTableView.delegate = self
-        AccountInfoTableView.dataSource = self
-        
-        AccountInfoTableView.tableFooterView = UIView()
     }
-
+    
     //MARK:- IBActions
+    
+    @IBAction func submitBtnClicked(_ sender: Any) {
+    }
+    
     
     @IBAction func backBtnClicked(_ sender: Any) {
         self.popVC()
