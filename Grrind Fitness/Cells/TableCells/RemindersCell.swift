@@ -10,6 +10,13 @@ import UIKit
 
 class RemindersCell: UITableViewCell {
 
+    @IBOutlet weak var reminderSwitch: UISwitch!
+    @IBOutlet weak var repeatDay: UILabel!
+    @IBOutlet weak var reminderName: UILabel!
+    @IBOutlet weak var ampm: UILabel!
+    @IBOutlet weak var time: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

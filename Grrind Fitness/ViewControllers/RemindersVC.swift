@@ -10,6 +10,7 @@ import UIKit
 
 class RemindersVC: UIViewController {
 
+
     @IBOutlet weak var remindersTableView: UITableView!
     
     var models = [myReminder]()
@@ -101,15 +102,15 @@ extension RemindersVC:UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = remindersTableView.dequeueReusableCell(withIdentifier: "cell", for:indexPath)
-        cell.textLabel?.text = models[indexPath.row].title
+        let cell = remindersTableView.dequeueReusableCell(withIdentifier: "RemindersCell", for:indexPath) as? RemindersCell
+        cell?.reminderName.text = models[indexPath.row].title
         let date = models[indexPath.row].date
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM,  dd, YYYY at hh:mm a"
+        formatter.dateFormat = "hh:mm a"
         
-        cell.detailTextLabel?.text = formatter.string(from: date)
-        return cell
+        cell?.time.text = formatter.string(from: date)
+        return cell!
     }
 }
 

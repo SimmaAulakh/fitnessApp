@@ -490,6 +490,33 @@ class ViewWithGradient2: UIView {
     }
     
 }
+class ViewWithGradient3: UIView {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    private func setup() {
+        DispatchQueue.main.async{
+         let gradient: CAGradientLayer = CAGradientLayer()
+
+            gradient.colors = [#colorLiteral(red: 0.9882352941, green: 0.2588235294, blue: 0.4823529412, alpha: 1).cgColor, #colorLiteral(red: 0.9803921569, green: 0.4823529412, blue: 0.4117647059, alpha: 1).cgColor]
+            gradient.locations = [0.0 , 1.0]
+            gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
+            gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+            gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.size.width, height: self.frame.size.height)
+
+            self.layer.insertSublayer(gradient, at: 0)
+        }
+    }
+    
+}
 
 class ButtonwithGradient: UIButton {
     

@@ -34,6 +34,7 @@
 		B5AE8BAD2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE8BAC2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift */; };
 		B5B7FBFA2444880E00423230 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7FBF92444880D00423230 /* HomeViewController.swift */; };
 		B5B7FBFC2445CC5C00423230 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */; };
+		B5ECB26324585684004F8D04 /* RemindersVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB26224585684004F8D04 /* RemindersVM.swift */; };
 		B5F94BA7245073F60011A593 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F94BA6245073F60011A593 /* AccountInfoViewController.swift */; };
 		B5F94BA9245085790011A593 /* AccountInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F94BA8245085790011A593 /* AccountInfoCell.swift */; };
 		CE58FF8E243E364B009D5E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58FF8D243E364B009D5E0B /* AppDelegate.swift */; };
@@ -104,6 +105,7 @@
 		B5AE8BAC2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLengthPopupVC.swift; sourceTree = "<group>"; };
 		B5B7FBF92444880D00423230 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B5ECB26224585684004F8D04 /* RemindersVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersVM.swift; sourceTree = "<group>"; };
 		B5F94BA6245073F60011A593 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
 		B5F94BA8245085790011A593 /* AccountInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoCell.swift; sourceTree = "<group>"; };
 		BC00B21BA7F0164C89F5ADCB /* Pods-Grrind Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grrind Fitness.release.xcconfig"; path = "Target Support Files/Pods-Grrind Fitness/Pods-Grrind Fitness.release.xcconfig"; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				B5AE8B9E2454704F000D4C87 /* AccountInfoVM.swift */,
 				B5AE8BA024547268000D4C87 /* ContactUsVM.swift */,
 				B5AE8BA824547A85000D4C87 /* WorkOutVideoVM.swift */,
+				B5ECB26224585684004F8D04 /* RemindersVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				CE5C9A622457418500A18CC9 /* AddRemindersVC.swift in Sources */,
 				B5AE8B9724546374000D4C87 /* FeedBackSentPopUpVC.swift in Sources */,
 				B5AE8B87245461C8000D4C87 /* UpdatePasswordVC.swift in Sources */,
+				B5ECB26324585684004F8D04 /* RemindersVM.swift in Sources */,
 				B5AE8BA924547A85000D4C87 /* WorkOutVideoVM.swift in Sources */,
 				CE7FE913243E5BB90065623E /* Extentions.swift in Sources */,
 				B5AE8BAB2454B5D7000D4C87 /* AudioSettingsPopupVC.swift in Sources */,
