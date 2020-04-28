@@ -44,6 +44,9 @@
 		CE58FF9A243E364D009D5E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE58FF98243E364D009D5E0B /* LaunchScreen.storyboard */; };
 		CE58FFA5243E364E009D5E0B /* Grrind_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58FFA4243E364E009D5E0B /* Grrind_FitnessTests.swift */; };
 		CE58FFB0243E364E009D5E0B /* Grrind_FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58FFAF243E364E009D5E0B /* Grrind_FitnessUITests.swift */; };
+		CE5C9A5E245739F700A18CC9 /* RemindersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C9A5D245739F700A18CC9 /* RemindersVC.swift */; };
+		CE5C9A6024573A2C00A18CC9 /* RemindersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C9A5F24573A2C00A18CC9 /* RemindersCell.swift */; };
+		CE5C9A622457418500A18CC9 /* AddRemindersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C9A612457418500A18CC9 /* AddRemindersVC.swift */; };
 		CE7FE913243E5BB90065623E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FE912243E5BB90065623E /* Extentions.swift */; };
 		CE7FE915243E74C60065623E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FE914243E74C60065623E /* ForgotPasswordViewController.swift */; };
 		CE81E7F5244246EC00F7E126 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81E7F4244246EC00F7E126 /* SettingsViewController.swift */; };
@@ -118,6 +121,9 @@
 		CE58FFAB243E364E009D5E0B /* Grrind FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grrind FitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE58FFAF243E364E009D5E0B /* Grrind_FitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grrind_FitnessUITests.swift; sourceTree = "<group>"; };
 		CE58FFB1243E364E009D5E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5C9A5D245739F700A18CC9 /* RemindersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersVC.swift; sourceTree = "<group>"; };
+		CE5C9A5F24573A2C00A18CC9 /* RemindersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCell.swift; sourceTree = "<group>"; };
+		CE5C9A612457418500A18CC9 /* AddRemindersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemindersVC.swift; sourceTree = "<group>"; };
 		CE7FE912243E5BB90065623E /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		CE7FE914243E74C60065623E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		CE81E7F4244246EC00F7E126 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -277,6 +283,8 @@
 				B5AE8BA624547A35000D4C87 /* WorkoutVideoVC.swift */,
 				B5AE8BAA2454B5D7000D4C87 /* AudioSettingsPopupVC.swift */,
 				B5AE8BAC2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift */,
+				CE5C9A5D245739F700A18CC9 /* RemindersVC.swift */,
+				CE5C9A612457418500A18CC9 /* AddRemindersVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 			children = (
 				CE81E7F82442517700F7E126 /* SettingsCell.swift */,
 				B5F94BA8245085790011A593 /* AccountInfoCell.swift */,
+				CE5C9A5F24573A2C00A18CC9 /* RemindersCell.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -567,6 +576,7 @@
 			files = (
 				B5AE8BAD2454C1AA000D4C87 /* WorkoutLengthPopupVC.swift in Sources */,
 				B5AE8BA124547268000D4C87 /* ContactUsVM.swift in Sources */,
+				CE5C9A622457418500A18CC9 /* AddRemindersVC.swift in Sources */,
 				B5AE8B9724546374000D4C87 /* FeedBackSentPopUpVC.swift in Sources */,
 				B5AE8B87245461C8000D4C87 /* UpdatePasswordVC.swift in Sources */,
 				B5AE8BA924547A85000D4C87 /* WorkOutVideoVM.swift in Sources */,
@@ -589,10 +599,12 @@
 				B5AE8B952454633C000D4C87 /* ContactUsVC.swift in Sources */,
 				B55B1A96243F93C7005E3225 /* ResetPasswordViewController.swift in Sources */,
 				B5B7FBFA2444880E00423230 /* HomeViewController.swift in Sources */,
+				CE5C9A6024573A2C00A18CC9 /* RemindersCell.swift in Sources */,
 				B55B1A982440D699005E3225 /* Constants.swift in Sources */,
 				B5AE8B9324546321000D4C87 /* PrivacyPolicyVC.swift in Sources */,
 				B5AE8B8524546098000D4C87 /* UpdateEmailVC.swift in Sources */,
 				CE58FF8E243E364B009D5E0B /* AppDelegate.swift in Sources */,
+				CE5C9A5E245739F700A18CC9 /* RemindersVC.swift in Sources */,
 				B5AE8B9124546302000D4C87 /* TermsOfUseVC.swift in Sources */,
 				B5AE8BA724547A35000D4C87 /* WorkoutVideoVC.swift in Sources */,
 				B57916E52447217F00639FCF /* FacebookRegisterViewController.swift in Sources */,
