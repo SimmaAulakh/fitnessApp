@@ -23,12 +23,17 @@ class AddRemindersVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-       
+        datePicker.datePickerMode = .time
+        
+        
+        
+        self.reminderNameHeightConst.constant = 56
+          self.repeatHeightConst.constant = 56
     }
     @IBAction func reminderNameDownButton(_ sender: UIButton) {
         if sender.tag == 0{
             UIView.animate(withDuration: 0.5,animations:  {
-                self.reminderNameHeightConst.constant = 200
+                self.reminderNameHeightConst.constant = 130
             self.view.layoutIfNeeded()
             })
            
@@ -48,7 +53,7 @@ class AddRemindersVC: UIViewController {
     @IBAction func repeatDownButton(_ sender: UIButton) {
         if sender.tag == 0{
                    UIView.animate(withDuration: 0.5,animations:  {
-                       self.repeatHeightConst.constant = 200
+                       self.repeatHeightConst.constant = 130
                    self.view.layoutIfNeeded()
                    })
                   
