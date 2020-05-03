@@ -11,6 +11,13 @@ import UIKit
 class AddRemindersVC: UIViewController {
     
    
+    @IBOutlet weak var saturdaybtn: UIButton!
+    @IBOutlet weak var fridayBtn: UIButton!
+    @IBOutlet weak var thursdayBtn: UIButton!
+    @IBOutlet weak var wednesdayBtn: UIButton!
+    @IBOutlet weak var tuesdayBtn: UIButton!
+    @IBOutlet weak var mondayBtn: UIButton!
+    @IBOutlet weak var sundayBtn: UIButton!
     @IBOutlet weak var reminderNameHeightConst: NSLayoutConstraint!
     @IBOutlet weak var repeatHeightConst: NSLayoutConstraint!
     @IBOutlet var titleField: UITextField!
@@ -30,6 +37,36 @@ class AddRemindersVC: UIViewController {
         self.reminderNameHeightConst.constant = 56
           self.repeatHeightConst.constant = 56
     }
+    @IBAction func saturdayBtnClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.backgroundColor = sender.isSelected ? #colorLiteral(red: 0.2470588235, green: 0.7647058824, blue: 0.9568627451, alpha: 1) : UIColor.white
+    }
+    @IBAction func fridayBtnClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.backgroundColor = sender.isSelected ? #colorLiteral(red: 0.2470588235, green: 0.7647058824, blue: 0.9568627451, alpha: 1) : UIColor.white
+    }
+    @IBAction func thursdayBtnClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.backgroundColor = sender.isSelected ? #colorLiteral(red: 0.2470588235, green: 0.7647058824, blue: 0.9568627451, alpha: 1) : UIColor.white
+    }
+    @IBAction func wednesdayBtnClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.backgroundColor = sender.isSelected ? #colorLiteral(red: 0.2470588235, green: 0.7647058824, blue: 0.9568627451, alpha: 1) : UIColor.white
+    }
+    @IBAction func tuesdayBtnClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.backgroundColor = sender.isSelected ? #colorLiteral(red: 0.2470588235, green: 0.7647058824, blue: 0.9568627451, alpha: 1) : UIColor.white
+    }
+    @IBAction func mondayBtnClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.backgroundColor = sender.isSelected ? #colorLiteral(red: 0.2470588235, green: 0.7647058824, blue: 0.9568627451, alpha: 1) : UIColor.white
+    }
+    @IBAction func sundayBtnClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.backgroundColor = sender.isSelected ? #colorLiteral(red: 0.2470588235, green: 0.7647058824, blue: 0.9568627451, alpha: 1) : UIColor.white
+    }
+    
+    
     @IBAction func reminderNameDownButton(_ sender: UIButton) {
         if sender.tag == 0{
             UIView.animate(withDuration: 0.5,animations:  {

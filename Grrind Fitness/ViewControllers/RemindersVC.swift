@@ -98,19 +98,24 @@ extension RemindersVC:UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        return 2//models.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = remindersTableView.dequeueReusableCell(withIdentifier: "RemindersCell", for:indexPath) as? RemindersCell
-        cell?.reminderName.text = models[indexPath.row].title
-        let date = models[indexPath.row].date
+      //  cell?.reminderName.text = models[indexPath.row].title
+        //let date = //models[indexPath.row].date
         
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm a"
         
-        cell?.time.text = formatter.string(from: date)
+    //    cell?.time.text = formatter.string(from: date)
         return cell!
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            
+        }
     }
 }
 
