@@ -114,6 +114,11 @@ class AddRemindersVC: UIViewController {
 //    }
    
         }
+    
+    @IBAction func cancelBtnClicked(_ sender: Any) {
+        self.popVC()
+    }
+    
     }
 
 

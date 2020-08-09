@@ -7,16 +7,270 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A8BE0C8D-12AA-44CC-BAC3-6735EDCA57D9"
+            uuid = "D9B0FD8C-61E3-4A41-B3AD-070481BC0768"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grrind Fitness/ViewModels/SettingsVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9B0FD8C-61E3-4A41-B3AD-070481BC0768 - ed172b4bb85dac0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grrind_Fitness.SettingsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Grrind Fitness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simranjeetaulakh/Documents/All%20Projects/eccentric/Grrind%20Fitness/ViewModels/SettingsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "D9B0FD8C-61E3-4A41-B3AD-070481BC0768 - ed172b4bb85dac0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grrind_Fitness.SettingsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Grrind Fitness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simranjeetaulakh/Documents/All%20Projects/eccentric/Grrind%20Fitness/ViewModels/SettingsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "516">
+               </Location>
+               <Location
+                  uuid = "D9B0FD8C-61E3-4A41-B3AD-070481BC0768 - ed172b4bb85dac0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grrind_Fitness.SettingsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Grrind Fitness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simranjeetaulakh/Documents/All%20Projects/eccentric/Grrind%20Fitness/ViewModels/SettingsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  uuid = "D9B0FD8C-61E3-4A41-B3AD-070481BC0768 - ed172b4bb85dac0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Grrind_Fitness.SettingsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Grrind Fitness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simranjeetaulakh/Documents/All%20Projects/eccentric/Grrind%20Fitness/ViewModels/SettingsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "660">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21D50E25-D88E-42F2-9C91-D04D75588F6F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Grrind Fitness/ViewModels/WorkOutVideoVM.swift"
+            filePath = "Grrind Fitness/ViewControllers/RemindersVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "initVideoPlayer()"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "backBtnClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF1AA959-F006-4600-BDE4-2396C7FE44A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grrind Fitness/ViewModels/OnBoardStepOneVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "registerUser(dataDic:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF1AA959-F006-4600-BDE4-2396C7FE44A1 - 81d14c6ffd682eb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eccentric.OnBoardStepOneVM.registerUser(dataDic: __C.NSMutableDictionary, completionHandler: () -&gt; ()) -&gt; ()"
+                  moduleName = "Eccentric"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simranjeetaulakh/Documents/All%20Projects/eccentric/Grrind%20Fitness/ViewModels/OnBoardStepOneVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "FF1AA959-F006-4600-BDE4-2396C7FE44A1 - 4b26d9996c79ffb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in Eccentric.OnBoardStepOneVM.registerUser(dataDic: __C.NSMutableDictionary, completionHandler: () -&gt; ()) -&gt; ()"
+                  moduleName = "Eccentric"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simranjeetaulakh/Documents/All%20Projects/eccentric/Grrind%20Fitness/ViewModels/OnBoardStepOneVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D7DA534-70B7-4FF0-9F4F-4935F42D9029"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grrind Fitness/WebServices/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "registerUser(request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1363BF16-C86A-4AA9-843C-A052A842A88C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grrind Fitness/ViewModels/OnBoardStepTwoVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "OnBoardStepTwoVC"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0A7B9A3-4102-4A34-8A17-25A7862D48B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grrind Fitness/ViewModels/OnBoardStepTwoVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "checkValidations()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C0A7B9A3-4102-4A34-8A17-25A7862D48B7 - d9e611fbddf8fb99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eccentric.OnBoardStepTwoVC.checkValidations() -&gt; ()"
+                  moduleName = "Eccentric"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simranjeetaulakh/Documents/All%20Projects/eccentric/Grrind%20Fitness/ViewModels/OnBoardStepTwoVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "679">
+               </Location>
+               <Location
+                  uuid = "C0A7B9A3-4102-4A34-8A17-25A7862D48B7 - e9ed64f651ec63a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Eccentric.OnBoardStepTwoVC.checkValidations() -&gt; ()"
+                  moduleName = "Eccentric"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simranjeetaulakh/Documents/All%20Projects/eccentric/Grrind%20Fitness/ViewModels/OnBoardStepTwoVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "178">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75DD4D0E-1914-4703-8D42-AC3BB33F1F87"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grrind Fitness/ViewModels/HowManyRepetitionVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A565011A-8577-415E-BD6B-EBA8AE3C4AAF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grrind Fitness/ViewModels/HowManyRepetitionVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "textFieldShouldReturnSingle(_:newString:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36E26F67-1B6D-4A81-AD2E-01A837C6676F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Grrind Fitness/ViewControllers/WorkoutVideoVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "nextBtnClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -11,14 +11,36 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to thescene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        setScreen()
     }
+    
+    func setScreen() {
+           
+          if DataManager.shared.UserID == "" {
+              let loginVc = storyboard.instantiateViewController(identifier: "LoginVC") as! LoginVC
+              let navigation = storyboard.instantiateViewController(identifier: "Navigation") as! UINavigationController
+              navigation.setViewControllers([loginVc], animated: true)
+              navigation.isNavigationBarHidden = false
+              window?.rootViewController = navigation
+              window?.makeKeyAndVisible()
+          }
+          else {
+              let loginVc = storyboard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+              let navigation = storyboard.instantiateViewController(identifier: "Navigation") as! UINavigationController
+              navigation.setViewControllers([loginVc], animated: true)
+              navigation.isNavigationBarHidden = false
+              window?.rootViewController = navigation
+              window?.makeKeyAndVisible()
+          }
+      }
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

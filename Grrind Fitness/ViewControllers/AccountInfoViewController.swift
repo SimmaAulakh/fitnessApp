@@ -15,7 +15,7 @@ class AccountInfoViewController: UIViewController {
     
     //MARK:- Variables
     let viewObj = AccountInfoVM()
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
 

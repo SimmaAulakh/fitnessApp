@@ -23,16 +23,12 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "AccountInfoCell", for: indexPath) as? AccountInfoCell
-        
         cell?.textlbl.text = viewObj.nameArray[indexPath.row]
-        
         return cell!
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            print("1")
-           
        }
 }
     

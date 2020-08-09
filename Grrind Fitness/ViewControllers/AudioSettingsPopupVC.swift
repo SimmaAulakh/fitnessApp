@@ -32,5 +32,9 @@ class AudioSettingsPopupVC: UIViewController {
     }
     
 
+    @IBAction func dismissBtnClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
    
 }

@@ -84,26 +84,40 @@ extension SettingsViewController: UITableViewDataSource,UITableViewDelegate{
         case 0:
             switch indexPath.row {
             case 0: self.pushToVC(vcID: "AccountInfoViewController")
+            case 1:self.pushToVC(vcID: "RemindersVC")
+            case 3:
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "OnBoardStepTwoVC") as? OnBoardStepTwoVC
+                vc?.viewObj.isFromSettings = true
+                self.navigationController?.pushViewController(vc!, animated: true)
+               
             default:
                 break
             }
             
         case 1:
-        switch indexPath.row {
-        case 3: self.pushToVC(vcID: "ContactUsVC")
-        case 4: self.pushToVC(vcID: "TermsOfUseVC")
-        case 5: self.pushToVC(vcID: "PrivacyPolicyVC")
-        default:
-            break
+            switch indexPath.row {
+           
+            case 3: self.pushToVC(vcID: "ContactUsVC")
+            case 4: self.pushToVC(vcID: "TermsOfUseVC")
+            case 5: self.pushToVC(vcID: "PrivacyPolicyVC")
+            default:break
             }
             
-        case 2:break
+        case 2:
+        switch indexPath.row {
+        case 0:HelpingVC.shared.showAlertWithCompletionYesNo(title: Constants.AppInfo.APP_NAME, message: Constants.Alert_Messages.logoutUser) { (status) in
+            if status!{
+                DataManager.shared.UserID = ""
+                HelpingVC.shared.resetRootVC(from: self, rootIdentifier: "LoginVC")
+            }
+            }
             
-        default:
-            break
+        default:break
+            }
+        default:break
         }
-          
-      }
+        
+    }
     
   
 }

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  Grrind Fitness
 //
 //  Created by user on 08/04/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
     
     //MARK:- IBOutlets
     @IBOutlet weak var BgImage1: UIImageView!
@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var twittersigninbutton: UIButton!
     @IBOutlet weak var emaitTF: TextFieldWithShadow!
     @IBOutlet weak var passwordTF: TextFieldWithShadow1!
+    
+    //MARK:- Variables
+    let viewObj = LoginVM()
     
     //MARK:- View life cycle
     override func viewDidLoad() {
@@ -56,25 +59,17 @@ class ViewController: UIViewController {
     @IBAction func forgotPasswordBtnClicked(_ sender: Any) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as? ForgotPasswordViewController
-        
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     @IBAction func RegisterBtnClicked(_ sender: Any) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
-        
         self.navigationController?.pushViewController(vc!, animated: true)
-        
-        
-    }
+            }
     
     @IBAction func signInBtnClicked(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
-        
-        self.navigationController?.pushViewController(vc!, animated: true)
-        
-        
+        checkValidations()
     }
     
     @IBAction func continueWithFBBtnClicked(_ sender: Any) {

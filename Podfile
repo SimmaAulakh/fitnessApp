@@ -7,6 +7,9 @@ target 'Grrind Fitness' do
 
   # Pods for Grrind Fitness
 pod 'IQKeyboardManagerSwift'
+
+pod 'Charts'
+
   target 'Grrind FitnessTests' do
     inherit! :search_paths
     # Pods for testing

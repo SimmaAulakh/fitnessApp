@@ -24,6 +24,7 @@ class RemindersVC: UIViewController {
         remindersTableView.dataSource = self
         self.navigationController?.isNavigationBarHidden = true
     }
+    
     @IBAction  func didTapAdd() {
         
       guard let vc = storyboard?.instantiateViewController(identifier: "AddRemindersVC")as? AddRemindersVC else{
@@ -84,6 +85,11 @@ class RemindersVC: UIViewController {
             }
         })
     }
+    
+    @IBAction func backBtnClicked(_ sender: Any) {
+        self.popVC()
+    }
+    
 }
 extension RemindersVC:UITableViewDelegate{
     

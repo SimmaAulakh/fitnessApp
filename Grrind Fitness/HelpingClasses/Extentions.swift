@@ -321,7 +321,6 @@ extension UITextField{
         //        let phone_regex = "((\\+)|(00))[0-9]{6,14}"
         let phoneTest = NSPredicate(format: "SELF MATCHES %@",phone_regex)
         return phoneTest.evaluate(with: self.text)
-        
     }
 }
 
@@ -515,7 +514,6 @@ class ViewWithGradient3: UIView {
             self.layer.insertSublayer(gradient, at: 0)
         }
     }
-    
 }
 
 class ButtonwithGradient: UIButton {
@@ -549,7 +547,7 @@ class ButtonwithGradient: UIButton {
                  self.layer.masksToBounds = true
                  self.layer.shadowColor = #colorLiteral(red: 0.4156862745, green: 0.9607843137, blue: 0.9921568627, alpha: 1)
                  self.layer.shadowOffset = CGSize(width: 3, height: 3)
-            self.layer.shadowOpacity = 1.0
+                 self.layer.shadowOpacity = 1.0
                  self.layer.shadowRadius = 5.0
                  self.layer.masksToBounds = false
                  self.layer.borderWidth = 2.0
@@ -576,6 +574,47 @@ class ButtonwithGradient1: UIButton {
          let gradient: CAGradientLayer = CAGradientLayer()
 
             gradient.colors = [#colorLiteral(red: 0.9882352941, green: 0.2862745098, blue: 0.6862745098, alpha: 1).cgColor, #colorLiteral(red: 0.9882352941, green: 0.6196078431, blue: 0.2588235294, alpha: 1).cgColor]
+            gradient.locations = [0.0 , 1.0]
+            gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
+            gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+            gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.size.width, height: self.frame.size.height)
+            gradient.cornerRadius = 10
+            
+            
+
+            self.layer.insertSublayer(gradient, at: 0)
+            
+            self.layer.cornerRadius = 10//self.frame.height/2
+                 self.layer.masksToBounds = true
+                 self.layer.shadowColor = #colorLiteral(red: 0.9960784314, green: 0.6666666667, blue: 0.8352941176, alpha: 1)
+                 self.layer.shadowOffset = CGSize(width: 3, height: 3)
+            self.layer.shadowOpacity = 1.0
+                 self.layer.shadowRadius = 5.0
+                 self.layer.masksToBounds = false
+                 self.layer.borderWidth = 2.0
+                 self.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)//UIColor.lightGray.cgColor
+        }
+    }
+    
+}
+
+class ButtonwithGradients: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    private func setup() {
+        DispatchQueue.main.async{
+         let gradient: CAGradientLayer = CAGradientLayer()
+
+            gradient.colors = [#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).cgColor, #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1).cgColor]
             gradient.locations = [0.0 , 1.0]
             gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
             gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
@@ -709,13 +748,13 @@ class ButtonwithGradient3: UIButton {
             
             self.layer.cornerRadius = 10//self.frame.height/2
                  self.layer.masksToBounds = true
-                // self.layer.shadowColor = #colorLiteral(red: 0.4156862745, green: 0.9607843137, blue: 0.9921568627, alpha: 1)
-                 //self.layer.shadowOffset = CGSize(width: 3, height: 3)
+                //self.layer.shadowColor = #colorLiteral(red: 0.4156862745, green: 0.9607843137, blue: 0.9921568627, alpha: 1)
+                //self.layer.shadowOffset = CGSize(width: 3, height: 3)
                 //self.layer.shadowOpacity = 1.0
                 //self.layer.shadowRadius = 5.0
-                 //self.layer.masksToBounds = false
-                 //self.layer.borderWidth = 2.0
-                 //self.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)//UIColor.lightGray.cgColor
+                //self.layer.masksToBounds = false
+                //self.layer.borderWidth = 2.0
+                //self.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)//UIColor.lightGray.cgColor
         }
     }
     
@@ -742,9 +781,6 @@ class ButtonwithGradient4: UIButton {
             gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
             gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.size.width, height: self.frame.size.height)
             gradient.cornerRadius = 10
-            
-            
-
             self.layer.insertSublayer(gradient, at: 0)
             
             self.layer.cornerRadius = 10//self.frame.height/2
@@ -868,7 +904,6 @@ class ViewWithGrayBorder: UIView {
             self.layer.borderColor = UIColor.lightGray.cgColor
         }
     }
-    
 }
 
 class TwoSidesCornerRadius:UIView{
@@ -1610,6 +1645,14 @@ extension String {
         return URL(string: self) != nil
     }
     
+    
+    
+}
+
+extension Int {
+    public func toString() -> String{
+        return "\(self)"
+    }
 }
 
 extension UILabel {
@@ -1631,43 +1674,43 @@ extension UILabel {
     }
 }
 
-extension NSAttributedString {
-    
-    convenience init(htmlString html: String, font: UIFont? = nil, useDocumentFontSize: Bool = true) throws {
-        let options: [NSAttributedString.DocumentReadingOptionKey : Any] = [
-            .documentType: NSAttributedString.DocumentType.html,
-            .characterEncoding: String.Encoding.utf8.rawValue
-        ]
-        
-        let data = html.data(using: .utf8, allowLossyConversion: true)
-        guard (data != nil), let fontFamily = font?.familyName, let attr = try? NSMutableAttributedString(data: data!, options: options, documentAttributes: nil) else {
-            try self.init(data: data ?? Data(html.utf8), options: options, documentAttributes: nil)
-            return
-        }
-        
-        let fontSize: CGFloat? = useDocumentFontSize ? nil : font!.pointSize
-        let range = NSRange(location: 0, length: attr.length)
-        attr.enumerateAttribute(.font, in: range, options: .longestEffectiveRangeNotRequired) { attrib, range, _ in
-            if let htmlFont = attrib as? UIFont {
-                let traits = htmlFont.fontDescriptor.symbolicTraits
-                var descrip = htmlFont.fontDescriptor.withFamily(fontFamily)
-                
-                if (traits.rawValue & UIFontDescriptor.SymbolicTraits.traitBold.rawValue) != 0 {
-                    descrip = descrip.withSymbolicTraits(.traitBold)!
-                }
-                
-                if (traits.rawValue & UIFontDescriptor.SymbolicTraits.traitItalic.rawValue) != 0 {
-                    descrip = descrip.withSymbolicTraits(.traitItalic)!
-                }
-                
-                attr.addAttribute(.font, value: UIFont(descriptor: descrip, size: fontSize ?? htmlFont.pointSize), range: range)
-            }
-        }
-        
-        self.init(attributedString: attr)
-    }
-    
-}
+//extension NSAttributedString {
+//
+//    convenience init(htmlString html: String, font: UIFont? = nil, useDocumentFontSize: Bool = true) throws {
+//        let options: [NSAttributedString.DocumentReadingOptionKey : Any] = [
+//            .documentType: NSAttributedString.DocumentType.html,
+//            .characterEncoding: String.Encoding.utf8.rawValue
+//        ]
+//
+//        let data = html.data(using: .utf8, allowLossyConversion: true)
+//        guard (data != nil), let fontFamily = font?.familyName, let attr = try? NSMutableAttributedString(data: data!, options: options, documentAttributes: nil) else {
+//            try self.init(data: data ?? Data(from: html.utf8), options: options, documentAttributes: nil)
+//            return
+//        }
+//
+//        let fontSize: CGFloat? = useDocumentFontSize ? nil : font!.pointSize
+//        let range = NSRange(location: 0, length: attr.length)
+//        attr.enumerateAttribute(.font, in: range, options: .longestEffectiveRangeNotRequired) { attrib, range, _ in
+//            if let htmlFont = attrib as? UIFont {
+//                let traits = htmlFont.fontDescriptor.symbolicTraits
+//                var descrip = htmlFont.fontDescriptor.withFamily(fontFamily)
+//
+//                if (traits.rawValue & UIFontDescriptor.SymbolicTraits.traitBold.rawValue) != 0 {
+//                    descrip = descrip.withSymbolicTraits(.traitBold)!
+//                }
+//
+//                if (traits.rawValue & UIFontDescriptor.SymbolicTraits.traitItalic.rawValue) != 0 {
+//                    descrip = descrip.withSymbolicTraits(.traitItalic)!
+//                }
+//
+//                attr.addAttribute(.font, value: UIFont(descriptor: descrip, size: fontSize ?? htmlFont.pointSize), range: range)
+//            }
+//        }
+//
+//        self.init(attributedString: attr)
+//    }
+//
+//}
 
 extension UIApplication {
     class func tryURL(urls: [String]) {
@@ -1973,5 +2016,18 @@ extension String {
             }
         }
         return date
+    }
+}
+
+
+
+
+
+
+
+
+extension AVPlayer {
+    var isPlaying: Bool {
+        return rate != 0 && error == nil
     }
 }

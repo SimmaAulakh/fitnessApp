@@ -10,7 +10,10 @@ import UIKit
 
 class FacebookRegisterViewController: UIViewController {
 
+    //MARK:- IBOutlets
     @IBOutlet weak var ImageView: UIImageView!
+    
+    //MARK:- View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,8 +24,24 @@ class FacebookRegisterViewController: UIViewController {
     }
     
 
+    //MARK:- IBActions
    
+    @IBAction func backBtnClicked(_ sender: Any) {
+        self.popVC()
     }
+    
+    @IBAction func privacyPolicyBtnClicked(_ sender: Any) {
+        self.pushToVC(vcID: "PrivacyPolicyVC")
+    }
+    
+    @IBAction func termsAndConditionsBtnClicked(_ sender: Any) {
+        self.pushToVC(vcID: "TermsOfUseVC")
+    }
+    
+    @IBAction func nextBtnClicked(_ sender: Any) {
+        
+    }
+}
     
 
 
