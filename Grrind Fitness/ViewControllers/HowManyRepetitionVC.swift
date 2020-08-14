@@ -34,7 +34,12 @@ class HowManyRepetitionVC: UIViewController {
    //MARK:- IBActions
 
     @IBAction func nextExerciseBtnClicked(_ sender: Any) {
-        self.popVC()
+        if repsTxtFields[0].text != "" && repsTxtFields[1].text != ""{
+             self.popVC()
+        }else{
+            self.showAlert(message: Constants.Alert_Messages.specifyNumberOfReps)
+        }
+       
     }
     
     @IBAction func audioBtnClicked(_ sender: Any) {

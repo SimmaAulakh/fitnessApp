@@ -26,8 +26,8 @@ extension RegisterViewController{
         }else{
             let req = Register.request(firstname: firstNameTF?.text, lastname: lastNameTF?.text, email: emailTF.text, password: passwordTF?.text, country: countryTF?.text, city: cityTF?.text, dob: dobTF?.text)
             
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "OnBoardStepOneVC") as? OnBoardStepOneVC
-            vc?.viewObj.registerData = req
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LiabilityReleaseVC") as? LiabilityReleaseVC
+            vc?.registerData = req
             self.navigationController?.pushViewController(vc!, animated: true)
         }
     }

@@ -10,123 +10,28 @@ import UIKit
 
 class RemindersVC: UIViewController {
 
-
-    @IBOutlet weak var remindersTableView: UITableView!
+   @IBOutlet weak var remindersTableView: UITableView!
     
-    var models = [myReminder]()
-    
-    
-    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         remindersTableView.delegate = self
         remindersTableView.dataSource = self
         self.navigationController?.isNavigationBarHidden = true
     }
     
-    @IBAction  func didTapAdd() {
-        
-      guard let vc = storyboard?.instantiateViewController(identifier: "AddRemindersVC")as? AddRemindersVC else{
-            return
-        }
-        vc.title = "New Reminder"
-        vc.navigationItem.largeTitleDisplayMode = .never
-        vc.completion = { title, body, date in
-            DispatchQueue.main.async {
-                self.navigationController?.popToRootViewController(animated: true)
-                let new = myReminder(title: title, date: date, identifier: "id_\(title)")
-                self.models.append(new)
-                self.remindersTableView.reloadData()
-                
-                let content = UNMutableNotificationContent()
-                      content.title  = title
-                      content.sound = .default
-                      content.body = body
-                      
-                      let targetDate = date
-                      let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: targetDate), repeats: false)
-                      
-                      let request = UNNotificationRequest(identifier: "some_long_id", content: content, trigger: trigger)
-                      UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
-                      if error != nil{
-                          print("something went wrong")
-                          }
-                      })
-            }
-        }
-        navigationController?.pushViewController(vc, animated: true)
+  
+    @IBAction func editOrAddReminderAction(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddRemindersVC") as? AddRemindersVC
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
+    
     @IBAction  func didTapTest(){
         
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge,.sound], completionHandler: {success , error in
-            if success{
-                self.scheduleTest()
-            }else if  error != nil{
-                print("error occurred")
-            }
-        })
-        
-    }
-    func scheduleTest(){
-        
-        let content = UNMutableNotificationContent()
-        content.title  = "hello world"
-        content.sound = .default
-        content.body = "my long body , my long body"
-        
-        let targetDate = Date().addingTimeInterval(10)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: targetDate), repeats: false)
-        
-        let request = UNNotificationRequest(identifier: "some_long_id", content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
-        if error != nil{
-            print("something went wrong")
-            }
-        })
     }
     
     @IBAction func backBtnClicked(_ sender: Any) {
         self.popVC()
     }
-    
-}
-extension RemindersVC:UITableViewDelegate{
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        remindersTableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-}
-extension RemindersVC:UITableViewDataSource{
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2//models.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = remindersTableView.dequeueReusableCell(withIdentifier: "RemindersCell", for:indexPath) as? RemindersCell
-      //  cell?.reminderName.text = models[indexPath.row].title
-        //let date = //models[indexPath.row].date
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = "hh:mm a"
-        
-    //    cell?.time.text = formatter.string(from: date)
-        return cell!
-    }
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete{
-            
-        }
-    }
 }
 
-struct myReminder {
-    let title: String
-    let date: Date
-    let identifier: String
-}

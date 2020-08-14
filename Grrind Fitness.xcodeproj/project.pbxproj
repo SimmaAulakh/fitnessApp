@@ -20,6 +20,8 @@
 		B54ACE2624923C01004282C8 /* GoalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54ACE2524923C01004282C8 /* GoalData.swift */; };
 		B55B1A96243F93C7005E3225 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */; };
 		B55B1A982440D699005E3225 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55B1A972440D699005E3225 /* Constants.swift */; };
+		B5619E7924E09FE3005C530A /* LiabilityReleaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5619E7824E09FE3005C530A /* LiabilityReleaseVC.swift */; };
+		B5619E7B24E59912005C530A /* SaveSummary_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5619E7A24E59912005C530A /* SaveSummary_Base.swift */; };
 		B57916E52447217F00639FCF /* FacebookRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57916E42447217F00639FCF /* FacebookRegisterViewController.swift */; };
 		B58F18F024D6BD5100A7EB4A /* WorkoutSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F18EF24D6BD5100A7EB4A /* WorkoutSummaryVC.swift */; };
 		B58F18F224D6BD8F00A7EB4A /* WorkoutSummaryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F18F124D6BD8F00A7EB4A /* WorkoutSummaryVM.swift */; };
@@ -56,6 +58,7 @@
 		B5B156FB246B57B6001A048D /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B156F8246B57B6001A048D /* QuestionData.swift */; };
 		B5B156FC246B57B6001A048D /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B156F9246B57B6001A048D /* Answers.swift */; };
 		B5B156FD246B57B6001A048D /* Questions_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B156FA246B57B6001A048D /* Questions_Base.swift */; };
+		B5B47A0C24E5D8C800F0F7B5 /* AudioSettingsPopUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B47A0B24E5D8C800F0F7B5 /* AudioSettingsPopUpVM.swift */; };
 		B5B7FBFA2444880E00423230 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7FBF92444880D00423230 /* HomeViewController.swift */; };
 		B5B7FBFC2445CC5C00423230 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */; };
 		B5BB7E09245F4EB800D75074 /* HowManyRepetitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB7E08245F4EB800D75074 /* HowManyRepetitionVC.swift */; };
@@ -133,6 +136,8 @@
 		B54ACE2524923C01004282C8 /* GoalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalData.swift; sourceTree = "<group>"; };
 		B55B1A95243F93C7005E3225 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		B55B1A972440D699005E3225 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5619E7824E09FE3005C530A /* LiabilityReleaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiabilityReleaseVC.swift; sourceTree = "<group>"; };
+		B5619E7A24E59912005C530A /* SaveSummary_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveSummary_Base.swift; sourceTree = "<group>"; };
 		B57916E42447217F00639FCF /* FacebookRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookRegisterViewController.swift; sourceTree = "<group>"; };
 		B58F18EF24D6BD5100A7EB4A /* WorkoutSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSummaryVC.swift; sourceTree = "<group>"; };
 		B58F18F124D6BD8F00A7EB4A /* WorkoutSummaryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSummaryVM.swift; sourceTree = "<group>"; };
@@ -169,6 +174,7 @@
 		B5B156F8246B57B6001A048D /* QuestionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		B5B156F9246B57B6001A048D /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 		B5B156FA246B57B6001A048D /* Questions_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions_Base.swift; sourceTree = "<group>"; };
+		B5B47A0B24E5D8C800F0F7B5 /* AudioSettingsPopUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSettingsPopUpVM.swift; sourceTree = "<group>"; };
 		B5B7FBF92444880D00423230 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5B7FBFB2445CC5C00423230 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B5BB7E08245F4EB800D75074 /* HowManyRepetitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyRepetitionVC.swift; sourceTree = "<group>"; };
@@ -300,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				B58F18FA24DDE22100A7EB4A /* Category.swift */,
+				B5619E7A24E59912005C530A /* SaveSummary_Base.swift */,
 				B58F18F824DDE22100A7EB4A /* SummaryData.swift */,
 				B58F18FB24DDE22100A7EB4A /* Summary_Base.swift */,
 				B58F18F924DDE22100A7EB4A /* Weekdays.swift */,
@@ -454,6 +461,7 @@
 				B5BB7E08245F4EB800D75074 /* HowManyRepetitionVC.swift */,
 				B5BB7E0A245F4F5E00D75074 /* RestrtOrEndWrkoutPopUpVC.swift */,
 				B58F18EF24D6BD5100A7EB4A /* WorkoutSummaryVC.swift */,
+				B5619E7824E09FE3005C530A /* LiabilityReleaseVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -475,6 +483,7 @@
 				B5049BBB24C4F76300CB16EA /* HomeVM.swift */,
 				B58F18F124D6BD8F00A7EB4A /* WorkoutSummaryVM.swift */,
 				B58F18F324D9FFE900A7EB4A /* HowManyRepetitionVM.swift */,
+				B5B47A0B24E5D8C800F0F7B5 /* AudioSettingsPopUpVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -783,6 +792,7 @@
 				B5F755242467279200B60BBE /* WebServices.swift in Sources */,
 				B5049BC024C4F91900CB16EA /* UserGoalsData.swift in Sources */,
 				B5AE8BA924547A85000D4C87 /* WorkOutVideoVM.swift in Sources */,
+				B5619E7924E09FE3005C530A /* LiabilityReleaseVC.swift in Sources */,
 				CE7FE913243E5BB90065623E /* Extentions.swift in Sources */,
 				B5AE8BAB2454B5D7000D4C87 /* AudioSettingsPopupVC.swift in Sources */,
 				B5F7553B246734D900B60BBE /* UserData.swift in Sources */,
@@ -813,6 +823,7 @@
 				B58F18FD24DDE22100A7EB4A /* Weekdays.swift in Sources */,
 				CE58FF92243E364B009D5E0B /* LoginVC.swift in Sources */,
 				B5049BB824C4ED0F00CB16EA /* ExerciseData.swift in Sources */,
+				B5B47A0C24E5D8C800F0F7B5 /* AudioSettingsPopUpVM.swift in Sources */,
 				B5AE8B8B24546294000D4C87 /* OnBoardStepOneVC.swift in Sources */,
 				B5049BBC24C4F76300CB16EA /* HomeVM.swift in Sources */,
 				B5AE8B952454633C000D4C87 /* ContactUsVC.swift in Sources */,
@@ -840,6 +851,7 @@
 				B5AE8BA724547A35000D4C87 /* WorkoutVideoVC.swift in Sources */,
 				B58F18F624DB201400A7EB4A /* WorkoutDataManager.swift in Sources */,
 				B57916E52447217F00639FCF /* FacebookRegisterViewController.swift in Sources */,
+				B5619E7B24E59912005C530A /* SaveSummary_Base.swift in Sources */,
 				B5F75532246728EF00B60BBE /* APIManager.swift in Sources */,
 				CE58FF90243E364B009D5E0B /* SceneDelegate.swift in Sources */,
 				B5BB7E0B245F4F5E00D75074 /* RestrtOrEndWrkoutPopUpVC.swift in Sources */,

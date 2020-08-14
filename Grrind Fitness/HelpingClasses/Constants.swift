@@ -50,5 +50,8 @@ struct Constants {
         static let limitFourOptions:String = "You can only choose 4 options."
         static let logoutUser:String = "Are you sure you want to log out of \(Constants.AppInfo.APP_NAME)?"
         static let selectGoal = "Please select goals first."
+        static let selectIntensity = "Please select an intensity first."
+        static let exerciseTime = "Please input exersice time first."
+        static let specifyNumberOfReps = "Please input number of reps you did."
     }
 }

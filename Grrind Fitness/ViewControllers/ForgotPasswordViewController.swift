@@ -9,41 +9,44 @@
 import UIKit
 
 class ForgotPasswordViewController: UIViewController {
-
+    
+    //MARK:- View life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-          super.viewWillAppear(animated)
-          
-          navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         navigationController?.navigationBar.tintColor = .red
-          
-      }
-
-      override func viewWillDisappear(_ animated: Bool) {
         
-          super.viewWillDisappear(animated)
-        
-          navigationController?.setNavigationBarHidden(false   , animated: animated)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false   , animated: animated)
+    }
+    
+    //MARK:- IBActions
     @IBAction func backforgotpassword(_ sender: Any) {
-      
-                      self.navigationController?.popViewController(animated: true)
+        
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func ResetForgotpasswordButton(_ sender: Any) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResetPasswordViewController") as? ResetPasswordViewController
         
-               self.navigationController?.pushViewController(vc!, animated: true)
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     @IBAction func SignInbtn(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC
-               
-                      self.navigationController?.popViewController(animated: true)
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

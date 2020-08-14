@@ -17,30 +17,24 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var welcomeLbl: UILabel!
     @IBOutlet var minuteTF: [UITextField]!
     @IBOutlet weak var goalsCollectionView: UICollectionView!
-    
     @IBOutlet weak var advancedBtn: UIButton!
     @IBOutlet weak var standrdBtn: UIButton!
     @IBOutlet weak var easyBtn: UIButton!
     
     //MARK:- Variables
     let viewObj = HomeVM()
-
+    
     //MARK:- View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
-       
+        
         for tf in minuteTF{
             tf.delegate = self
         }
         
         self.welcomeLbl.text = "Welcome back, \(DataManager.shared.UserName)!"
-       
-        let req = Exercises.request(type: "easy",id: DataManager.shared.UserID,workout_type:"pre")
-                     let dataDic = HelpingVC.shared.setBodyParams(request: req)
-                     viewObj.getExercises(dataDic: dataDic) {
-                         
-                     }
+        
         
         let reqs = UserGoalsSelected.request(user_id: DataManager.shared.UserID)
         let dataDics = HelpingVC.shared.setBodyParams(request: reqs)
@@ -55,35 +49,26 @@ class HomeViewController: UIViewController {
     //MARK:- IBActions
     @IBAction func SettingsButtonClicked(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController
-               self.navigationController?.pushViewController(vc!, animated: true)
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     @IBAction func letsGoBtnClicked(_ sender: Any) {
-        var minutes = ""
-        for tf in minuteTF{
-            minutes.append(tf.text ?? "")
-            }
+        checkValidations()
        
-        if minutes != ""{
-        WorkoutDataManager.shared.totalWorkoutLenght = (Int(minutes) ?? 0) * 60
-       // self.pushToVC(vcID: "WorkoutVideoVC")
-      
-        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "WorkoutVideoVC") as? WorkoutVideoVC
-        vc?.viewObj.exercises = viewObj.exercises
-        self.navigationController?.pushViewController(vc!, animated: true)
-            }
     }
     
     @IBAction func easyBtnClicked(_ sender: UIButton) {
+        viewObj.intensitySelected = "easy"
         selectIntensity(intensity: "easy")
     }
     
     @IBAction func standardBtnClicked(_ sender: UIButton) {
+        viewObj.intensitySelected = "standard"
         selectIntensity(intensity: "standard")
     }
     
     @IBAction func advancedBtnClicked(_ sender: UIButton) {
+        viewObj.intensitySelected = "advance"
         selectIntensity(intensity: "advanced")
     }
     

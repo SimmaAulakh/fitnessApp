@@ -14,7 +14,6 @@ class HelpingVC: NSObject {
     //MARK:- Variables
     static let shared = HelpingVC()
    
-    
     func delay(seconds:Double, completion: @escaping() -> Void ){
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             completion()
@@ -26,6 +25,19 @@ class HelpingVC: NSObject {
         let minutes: Int = (totalSeconds / 60) % 60
         //  let hours: Int = totalSeconds / 3600
         return String(format: "%02d:%02d", minutes, seconds)
+    }
+    
+    func jsonToString(json: AnyObject) -> String{
+        do {
+            let data1 =  try JSONSerialization.data(withJSONObject: json, options: JSONSerialization.WritingOptions.prettyPrinted) // first of all convert json to the data
+            let convertedString = String(data: data1, encoding: String.Encoding.utf8) // the data will be converted to the string
+            print(convertedString ?? "") // <-- here is ur string
+            return convertedString ?? ""
+        } catch let myJSONError {
+            print(myJSONError)
+            return ""
+        }
+
     }
     
     //Set body parameters for API's

@@ -14,6 +14,7 @@ class WorkoutDataManager {
     
     var totalWorkoutLenght = 0
     var myWorkoutData = WorkoutData()
+    var volume:Float = 0.5
     
 }
 

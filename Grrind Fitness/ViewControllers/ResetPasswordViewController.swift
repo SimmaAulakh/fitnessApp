@@ -9,33 +9,35 @@
 import UIKit
 
 class ResetPasswordViewController: UIViewController {
-
+    
+    //MARK:- View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-      override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
-            super.viewWillAppear(animated)
-            
-            navigationController?.setNavigationBarHidden(true, animated: animated)
-            
-        }
-
-        override func viewWillDisappear(_ animated: Bool) {
-            
-            super.viewWillDisappear(animated)
-          
-            navigationController?.setNavigationBarHidden(false   , animated: animated)
-      }
-    
-    @IBAction func BackResetPassword(_ sender: Any) {
+        super.viewWillAppear(animated)
         
-           self.navigationController?.popViewController(animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+        
     }
     
-   
-
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false   , animated: animated)
+    }
+    
+    //MARK:- IBActions
+    @IBAction func BackResetPassword(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
 }

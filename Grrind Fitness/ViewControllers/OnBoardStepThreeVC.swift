@@ -31,8 +31,8 @@ class OnBoardStepThreeVC: UIViewController {
     //MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        minutesTF1.delegate = self
+        minutesTF2.delegate = self
     }
     
     

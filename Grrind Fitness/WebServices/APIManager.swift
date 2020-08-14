@@ -166,17 +166,21 @@ class APIManager {
         }
     }
     
-    func saveGetSummary(request:NSMutableDictionary,requestType:String,completionHandler:@escaping(_ responseData:SummaryData)->()){
+    func saveGetSummary(request:NSMutableDictionary,requestType:String,completionHandler:@escaping(_ responseData:SummaryData?,_ message:String?)->()){
            
            WebServices.shared.apiMethodWithParameters(urlComponent: WebServicesApi.workoutSummary, httpMethod:requestType, parameters: request, authorizationRequired: true) { (responseData, responseError) in
                do {
                    let responseModel = try self.jsonDecoder.decode(Summary_Base.self, from: responseData!)
                    if responseModel.code == 200{
-                    completionHandler(responseModel.data! )
+                    completionHandler(responseModel.data!, nil )
                    }else{
                        HelpingVC.shared.showAlert(message: responseModel.message ?? Constants.Alert_Messages.somethingWentWrong)
                    }
                } catch {
+                 let responseModels = try? self.jsonDecoder.decode(SaveSummary_Base.self, from: responseData!)
+                if responseModels?.code == 200{
+                    completionHandler(nil,responseModels?.message ?? "" )
+                }
                    print(error.localizedDescription)
                }
            }

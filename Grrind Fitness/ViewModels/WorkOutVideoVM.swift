@@ -13,6 +13,7 @@ import AVKit
 class WorkOutVideoVM {
     //MARK:- Variables
     var player: AVPlayer!
+    var audioPlayer: AVAudioPlayer?
     var exercises:[ExerciseData] = []
     var currentVideoIndex = 0
     var timer:Timer?
@@ -21,7 +22,7 @@ class WorkOutVideoVM {
     
     //MARK:- WebServices
     func saveSummary(request:NSMutableDictionary,completionHandler:@escaping()->()){
-        APIManager.shared.saveGetSummary(request: request, requestType: HttpMethod.post) { (responseData) in
+        APIManager.shared.saveGetSummary(request: request, requestType: HttpMethod.post) { (responseData,message) in
             completionHandler()
         }
     }
@@ -72,6 +73,18 @@ extension WorkoutVideoVC{
         }
     }
     
+    func playAudio(index:Int){
+        if let path = viewObj.exercises[index].audio_file,path != "" {
+                   let url = URL(string: path)
+        do {
+            viewObj.audioPlayer = try AVAudioPlayer(contentsOf: url!)
+            viewObj.audioPlayer?.play()
+        } catch {
+            // couldn't load file :(
+        }
+        }
+    }
+    
     func startTimer(){
          viewObj.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
     }
@@ -91,5 +104,9 @@ extension WorkoutVideoVC{
         default:
             break
         }
+    }
+    
+    func setUpNotifications(){
+        NotificationCenter.default.addObserver(self, selector: #selector(setVolume( _:)), name: NSNotification.Name("AudioVolume"), object: nil)
     }
 }

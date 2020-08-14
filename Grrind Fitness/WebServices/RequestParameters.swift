@@ -75,7 +75,15 @@ enum SaveSummary{
         var user_id:String?
         var date:String?
         var type:String?
-        var category:NSMutableDictionary?
+        var category:String?
+    }
+}
+
+enum GetSummary{
+    struct request {
+        var user_id:String?
+        var date:String?
+        var type:String?
     }
 }
 

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backgroundimage1" translatesAutoresizingMaskIntoConstraints="NO" id="a2G-3f-6RP">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000006" height="294.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="294.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECCENTRIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-DP-geI">
                                 <rect key="frame" x="80" y="55" width="215" height="23.5"/>
@@ -66,7 +66,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wgb-jN-GWp">
-                                        <rect key="frame" x="107" y="-50" width="101" height="84"/>
+                                        <rect key="frame" x="56.5" y="-50" width="202" height="84"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1024,7 +1024,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxo-t9-HTq" customClass="ViewWithBorder" customModule="Eccentric" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="89"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="56O-zz-RbK">
+                                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="56O-zz-RbK">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="89"/>
                                                         <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="50"/>
@@ -1043,7 +1043,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fux-wP-Sm9" customClass="ViewWithBorder" customModule="Eccentric" customModuleProvider="target">
                                                 <rect key="frame" x="65" y="0.0" width="50" height="89"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjc-aj-1Sv">
+                                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjc-aj-1Sv">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="89"/>
                                                         <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="50"/>
@@ -1167,10 +1167,10 @@
             </objects>
             <point key="canvasLocation" x="6304" y="220"/>
         </scene>
-        <!--View Controller-->
+        <!--Liability ReleaseVC-->
         <scene sceneID="fxP-21-j5a">
             <objects>
-                <viewController id="xWy-hy-mFe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LiabilityReleaseVC" id="xWy-hy-mFe" customClass="LiabilityReleaseVC" customModule="Eccentric" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OJw-68-iYe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1222,6 +1222,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="disagreeBtnClicked:" destination="xWy-hy-mFe" eventType="touchUpInside" id="0uU-Yj-Tza"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqG-p1-kxD" customClass="ButtonwithGradients" customModule="Eccentric" customModuleProvider="target">
                                         <rect key="frame" x="177.5" y="0.0" width="157.5" height="60"/>
@@ -1234,6 +1237,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="agreeBtnClicked:" destination="xWy-hy-mFe" eventType="touchUpInside" id="tWz-nN-2fM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1874,29 +1880,6 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="Wit-u2-3te">
-                                                <rect key="frame" x="20" y="296" width="240" height="11"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EASY" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr1-Af-Qhl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="11"/>
-                                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="9"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STANDARD" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZk-zf-ryC">
-                                                        <rect key="frame" x="93.5" y="0.0" width="53" height="11"/>
-                                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="9"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVANCED" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-8q-2UA">
-                                                        <rect key="frame" x="187.5" y="0.0" width="52.5" height="11"/>
-                                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="9"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASED ON YOUR CURRENT FITNESS LEVEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eed-52-brD">
                                                 <rect key="frame" x="45" y="324" width="190" height="10.5"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="9"/>
@@ -1911,13 +1894,34 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cP-yk-bJm">
-                                                <rect key="frame" x="20" y="258" width="240" height="30"/>
+                                                <rect key="frame" x="20" y="258" width="240" height="50"/>
                                                 <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EASY" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr1-Af-Qhl">
+                                                        <rect key="frame" x="4" y="34" width="22.5" height="11"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="9"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STANDARD" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZk-zf-ryC">
+                                                        <rect key="frame" x="95" y="34" width="50" height="11"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="9"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVANCED" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-8q-2UA">
+                                                        <rect key="frame" x="199.5" y="34" width="51" height="11"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="9"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="f8G-1p-EBv">
-                                                        <rect key="frame" x="5" y="0.0" width="230" height="30"/>
+                                                        <rect key="frame" x="5" y="12" width="230" height="10"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="10" id="q5f-xy-dKt"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N63-l7-9wS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="0.0" y="2" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="I4N-cx-Gai"/>
                                                             <constraint firstAttribute="height" constant="30" id="vQU-FN-7Aw"/>
@@ -1929,7 +1933,7 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhI-1Z-guX">
-                                                        <rect key="frame" x="105" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="105" y="2" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Lyb-tc-xwa"/>
                                                             <constraint firstAttribute="width" constant="30" id="QOa-20-9uz"/>
@@ -1941,7 +1945,7 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guh-RQ-oTX">
-                                                        <rect key="frame" x="210" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="210" y="2" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="8F3-eA-Itb"/>
                                                             <constraint firstAttribute="width" constant="30" id="EbK-S8-fvT"/>
@@ -1955,13 +1959,18 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="guh-RQ-oTX" firstAttribute="centerY" secondItem="4cP-yk-bJm" secondAttribute="centerY" id="8AV-HL-5Xt"/>
-                                                    <constraint firstItem="f8G-1p-EBv" firstAttribute="top" secondItem="4cP-yk-bJm" secondAttribute="top" id="UUX-at-nKM"/>
+                                                    <constraint firstItem="a3N-8q-2UA" firstAttribute="top" secondItem="guh-RQ-oTX" secondAttribute="bottom" constant="2" id="2cO-hm-CqS"/>
+                                                    <constraint firstItem="guh-RQ-oTX" firstAttribute="centerY" secondItem="4cP-yk-bJm" secondAttribute="centerY" constant="-8" id="8AV-HL-5Xt"/>
+                                                    <constraint firstItem="cZk-zf-ryC" firstAttribute="centerX" secondItem="VhI-1Z-guX" secondAttribute="centerX" id="Bfs-CT-oO7"/>
+                                                    <constraint firstItem="a3N-8q-2UA" firstAttribute="centerX" secondItem="guh-RQ-oTX" secondAttribute="centerX" id="NDd-Yb-tMj"/>
+                                                    <constraint firstItem="rr1-Af-Qhl" firstAttribute="top" secondItem="N63-l7-9wS" secondAttribute="bottom" constant="2" id="P1T-AX-BVq"/>
+                                                    <constraint firstItem="f8G-1p-EBv" firstAttribute="centerY" secondItem="4cP-yk-bJm" secondAttribute="centerY" constant="-8" id="QYe-61-W6g"/>
                                                     <constraint firstItem="f8G-1p-EBv" firstAttribute="leading" secondItem="4cP-yk-bJm" secondAttribute="leading" constant="5" id="bDA-Ir-6ub"/>
-                                                    <constraint firstItem="VhI-1Z-guX" firstAttribute="centerY" secondItem="4cP-yk-bJm" secondAttribute="centerY" id="kyg-ka-HkQ"/>
-                                                    <constraint firstAttribute="height" constant="30" id="pnu-9Q-vnI"/>
-                                                    <constraint firstItem="N63-l7-9wS" firstAttribute="centerY" secondItem="4cP-yk-bJm" secondAttribute="centerY" id="qAR-5G-bSs"/>
-                                                    <constraint firstAttribute="bottom" secondItem="f8G-1p-EBv" secondAttribute="bottom" id="qkR-dF-CoL"/>
+                                                    <constraint firstItem="cZk-zf-ryC" firstAttribute="top" secondItem="VhI-1Z-guX" secondAttribute="bottom" constant="2" id="i1n-XQ-tmR"/>
+                                                    <constraint firstItem="VhI-1Z-guX" firstAttribute="centerY" secondItem="4cP-yk-bJm" secondAttribute="centerY" constant="-8" id="kyg-ka-HkQ"/>
+                                                    <constraint firstItem="rr1-Af-Qhl" firstAttribute="centerX" secondItem="N63-l7-9wS" secondAttribute="centerX" id="pEq-JI-EWB"/>
+                                                    <constraint firstAttribute="height" constant="50" id="pnu-9Q-vnI"/>
+                                                    <constraint firstItem="N63-l7-9wS" firstAttribute="centerY" secondItem="4cP-yk-bJm" secondAttribute="centerY" constant="-8" id="qAR-5G-bSs"/>
                                                     <constraint firstItem="VhI-1Z-guX" firstAttribute="centerX" secondItem="4cP-yk-bJm" secondAttribute="centerX" id="rAW-q4-VUM"/>
                                                     <constraint firstAttribute="trailing" secondItem="f8G-1p-EBv" secondAttribute="trailing" constant="5" id="rAe-8P-7ii"/>
                                                     <constraint firstItem="N63-l7-9wS" firstAttribute="leading" secondItem="4cP-yk-bJm" secondAttribute="leading" id="ved-PI-8R3"/>
@@ -1973,7 +1982,6 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                         <constraints>
                                             <constraint firstItem="Eed-52-brD" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="45" id="050-Mv-avV"/>
                                             <constraint firstItem="7k8-nF-4IC" firstAttribute="top" secondItem="4qi-e4-Q2K" secondAttribute="bottom" constant="8" id="0iX-O6-TGE"/>
-                                            <constraint firstItem="Eed-52-brD" firstAttribute="top" secondItem="Wit-u2-3te" secondAttribute="bottom" constant="17" id="2dB-e6-p7g"/>
                                             <constraint firstAttribute="height" constant="355" id="3xx-Z1-7k3"/>
                                             <constraint firstItem="1MC-Z0-3Ff" firstAttribute="top" secondItem="7k8-nF-4IC" secondAttribute="bottom" constant="16" id="5Qh-pa-D59"/>
                                             <constraint firstItem="4cP-yk-bJm" firstAttribute="top" secondItem="oHm-3j-LSu" secondAttribute="bottom" constant="17.5" id="6qi-nS-Mq6"/>
@@ -1984,18 +1992,15 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                             <constraint firstItem="4qi-e4-Q2K" firstAttribute="top" secondItem="EEI-Ni-1PT" secondAttribute="bottom" constant="25" id="Pw4-Ti-BVq"/>
                                             <constraint firstItem="1MC-Z0-3Ff" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="45" id="b6n-B1-Gmm"/>
                                             <constraint firstItem="4qi-e4-Q2K" firstAttribute="centerX" secondItem="6bu-b8-hhW" secondAttribute="centerX" id="b9Q-v3-vnU"/>
-                                            <constraint firstItem="Wit-u2-3te" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="20" id="dan-Xc-0hy"/>
+                                            <constraint firstItem="Eed-52-brD" firstAttribute="top" secondItem="4cP-yk-bJm" secondAttribute="bottom" constant="16" id="bJj-Vz-IwR"/>
                                             <constraint firstItem="oHm-3j-LSu" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="32" id="dhj-8K-RZM"/>
-                                            <constraint firstItem="Wit-u2-3te" firstAttribute="top" secondItem="4cP-yk-bJm" secondAttribute="bottom" constant="8" id="hHr-Qn-Gvz"/>
                                             <constraint firstItem="7k8-nF-4IC" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="101" id="iLK-xY-EaY"/>
                                             <constraint firstAttribute="trailing" secondItem="4cP-yk-bJm" secondAttribute="trailing" constant="20" id="iT9-BO-Lia"/>
                                             <constraint firstItem="EEI-Ni-1PT" firstAttribute="top" secondItem="6bu-b8-hhW" secondAttribute="top" constant="14" id="jQn-YA-ZI2"/>
                                             <constraint firstItem="oHm-3j-LSu" firstAttribute="top" secondItem="1MC-Z0-3Ff" secondAttribute="bottom" constant="16" id="k4P-2w-p5V"/>
                                             <constraint firstAttribute="trailing" secondItem="oHm-3j-LSu" secondAttribute="trailing" constant="32" id="ko1-SO-pWU"/>
                                             <constraint firstItem="4cP-yk-bJm" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="20" id="m5x-jN-3wY"/>
-                                            <constraint firstAttribute="trailing" secondItem="Wit-u2-3te" secondAttribute="trailing" constant="20" id="mB0-xr-VQw"/>
                                             <constraint firstItem="EEI-Ni-1PT" firstAttribute="leading" secondItem="6bu-b8-hhW" secondAttribute="leading" constant="36" id="oHe-bh-nV2"/>
-                                            <constraint firstItem="Wit-u2-3te" firstAttribute="centerX" secondItem="6bu-b8-hhW" secondAttribute="centerX" id="ol3-dO-SYH"/>
                                             <constraint firstAttribute="trailing" secondItem="1MC-Z0-3Ff" secondAttribute="trailing" constant="45" id="rte-UN-pzT"/>
                                             <constraint firstAttribute="trailing" secondItem="Eed-52-brD" secondAttribute="trailing" constant="45" id="s0B-iP-XMp"/>
                                             <constraint firstItem="Eed-52-brD" firstAttribute="centerX" secondItem="6bu-b8-hhW" secondAttribute="centerX" id="v76-RD-Hzp"/>
@@ -2605,11 +2610,17 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74k-Fb-bsN">
                                                 <rect key="frame" x="276" y="20.5" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.95686274509803915" green="0.3411764705882353" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="volumeSwitchAction:" destination="HLC-oD-8dM" eventType="valueChanged" id="TuG-cY-6x6"/>
+                                                </connections>
                                             </switch>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="g0U-dh-ckN">
                                                 <rect key="frame" x="46" y="68.5" width="281" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.95686274510000002" green="0.3411764706" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="thumbTintColor" red="0.95686274510000002" green="0.3411764706" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="audioCoachVolumeSliderAction:" destination="HLC-oD-8dM" eventType="valueChanged" id="V6v-Vx-Xww"/>
+                                                </connections>
                                             </slider>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker.2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k86-7e-gjf">
                                                 <rect key="frame" x="10" y="63" width="23" height="40.5"/>
@@ -2644,6 +2655,9 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                                 <rect key="frame" x="46" y="64" width="281" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.27450980392156865" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="thumbTintColor" red="0.094117647058823528" green="0.44705882352941173" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="musicVolumeSliderAction:" destination="HLC-oD-8dM" eventType="valueChanged" id="tFj-2v-pvF"/>
+                                                </connections>
                                             </slider>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker.2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Bck-f4-1Bg">
                                                 <rect key="frame" x="10" y="59.5" width="23" height="38.5"/>
@@ -2692,9 +2706,12 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                         <viewLayoutGuide key="safeArea" id="T2o-Ma-1hQ"/>
                     </view>
                     <connections>
+                        <outlet property="audioCoachingSlider" destination="g0U-dh-ckN" id="F9m-T0-ct4"/>
                         <outlet property="bgView" destination="qHa-NK-WvW" id="DfE-Qv-GXl"/>
+                        <outlet property="musicVolumeSlider" destination="ZAl-yI-WJM" id="TK2-bo-hoD"/>
                         <outlet property="view2BgView" destination="6ri-N2-kkn" id="Xee-TY-KX4"/>
                         <outlet property="viewBgView" destination="EUe-ci-vhw" id="PrZ-uC-7ex"/>
+                        <outlet property="volumeSwitch" destination="74k-Fb-bsN" id="1PJ-ZR-ufO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IBc-mR-fDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2794,7 +2811,7 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="signInBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bf5-eB-XlE"/>
+                                            <action selector="saveChangesBtnClicked:" destination="JwX-KE-fQ9" eventType="touchUpInside" id="rAk-yU-DUz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -3073,16 +3090,16 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mI-MN-4gk" customClass="ViewWithGradient" customModule="Eccentric" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FACEBOOK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhK-1c-eYs">
-                                        <rect key="frame" x="113" y="31.5" width="94" height="20.5"/>
+                                        <rect key="frame" x="113" y="29" width="94" height="20.5"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
                                         <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oD-0O-fPq">
-                                        <rect key="frame" x="14" y="25.5" width="49.5" height="33"/>
+                                        <rect key="frame" x="14" y="23" width="49.5" height="33"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3103,7 +3120,7 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-FK-0Fg">
-                                <rect key="frame" x="0.0" y="63.5" width="320" height="636.5"/>
+                                <rect key="frame" x="0.0" y="59" width="320" height="588.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="xUE-xr-GA6">
                                         <rect key="frame" x="110" y="25" width="100" height="100"/>
@@ -3130,10 +3147,10 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="R3i-6S-Z6D">
-                                        <rect key="frame" x="20" y="222.5" width="280" height="320"/>
+                                        <rect key="frame" x="20" y="222.5" width="280" height="296"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKA-nP-5Bf">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="GJY-Dk-3rO"/>
                                                 </constraints>
@@ -3141,40 +3158,40 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-0q-k4y">
-                                                <rect key="frame" x="0.0" y="55" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="51" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBm-Qg-Qyr">
-                                                <rect key="frame" x="0.0" y="110" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="102" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd / mm / yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyn-jd-qEL">
-                                                <rect key="frame" x="0.0" y="165" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="153" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MUW-2E-Rrv">
-                                                <rect key="frame" x="0.0" y="220" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="204" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-cU-KlE">
-                                                <rect key="frame" x="0.0" y="275" width="280" height="45"/>
+                                                <rect key="frame" x="0.0" y="255" width="280" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By creating an account, you agree to Eccentric's" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvz-y4-OwV">
-                                        <rect key="frame" x="30" y="557.5" width="260" height="15"/>
+                                        <rect key="frame" x="30" y="533.5" width="260" height="15"/>
                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="6Rg-IJ-l6k">
-                                        <rect key="frame" x="65" y="580.5" width="190" height="14"/>
+                                        <rect key="frame" x="65" y="556.5" width="190" height="14"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TN-AC-ZhU">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="14"/>
@@ -3210,7 +3227,7 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UZ-2L-S6z" customClass="ButtonwithGradient" customModule="Eccentric" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="604.5" width="270" height="40"/>
+                                        <rect key="frame" x="25" y="580.5" width="270" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nof-GD-aNe"/>
                                         </constraints>
@@ -3635,8 +3652,7 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                             <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="backforgotpassword:" destination="mQc-Pb-Uh9" eventType="touchUpInside" id="jFR-Xq-vdx"/>
-                                            <action selector="didTapAdd" destination="CYX-Dt-ITN" eventType="touchUpInside" id="QyD-eR-w1n"/>
+                                            <action selector="editOrAddReminderAction:" destination="CYX-Dt-ITN" eventType="touchUpInside" id="86D-xE-qek"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -4309,6 +4325,9 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="doneBtnClicked:" destination="Jom-qi-8Bn" eventType="touchUpInside" id="hsL-q8-N0v"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -4344,6 +4363,9 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="dismissBtnClicked:" destination="Jom-qi-8Bn" eventType="touchUpInside" id="JZO-jm-gKJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSq-Yw-QKt">
                                         <rect key="frame" x="315" y="33" width="40" height="40"/>
@@ -4353,6 +4375,9 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                        <connections>
+                                            <action selector="shareBtnClicked:" destination="Jom-qi-8Bn" eventType="touchUpInside" id="kkM-n6-ayM"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORKOUT SUMMARY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snj-Ja-oIf">
                                         <rect key="frame" x="81" y="41" width="213.5" height="24"/>
@@ -4391,7 +4416,18 @@ All you need to do is fill up the blank spaces and then you will receive an emai
                     </view>
                     <size key="freeformSize" width="375" height="1200"/>
                     <connections>
+                        <outlet property="cardioLbl" destination="TwR-YX-6WP" id="zFQ-Wz-8br"/>
+                        <outlet property="fridayLogo" destination="B6z-fR-F1c" id="suL-QW-E45"/>
+                        <outlet property="mondayLogo" destination="91h-rH-WgQ" id="tSh-it-YbK"/>
+                        <outlet property="saturdayLogo" destination="efC-a5-70I" id="wX8-M2-fb2"/>
+                        <outlet property="strengthLbl" destination="ccg-as-ksc" id="Kqi-vU-Pb6"/>
+                        <outlet property="stretchLbl" destination="kqp-cV-chz" id="aVi-3g-gIc"/>
+                        <outlet property="sundayLogo" destination="IvG-R2-UIt" id="2Ga-Md-Dft"/>
+                        <outlet property="thursdayLogo" destination="2Gd-Z3-Sx4" id="V0b-6g-L60"/>
                         <outlet property="todayWorkoutChartView" destination="5R1-B4-age" id="BPe-Kg-oPB"/>
+                        <outlet property="tuesdayLogo" destination="a7S-cY-bZs" id="FBX-kh-VDM"/>
+                        <outlet property="wednesdayLogo" destination="cBa-iF-gNW" id="OSD-EP-WAG"/>
+                        <outlet property="workoutMessageLbl" destination="IPd-d7-ntR" id="vza-sE-q7Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMT-od-Kv4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

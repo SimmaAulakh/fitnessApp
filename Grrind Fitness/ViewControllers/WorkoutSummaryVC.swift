@@ -10,10 +10,22 @@ import UIKit
 import Charts
 
 class WorkoutSummaryVC: UIViewController {
-
+    
     //MARK:- IBOutlets
     
     @IBOutlet weak var todayWorkoutChartView: PieChartView!
+    @IBOutlet weak var mondayLogo: UIImageView!
+    @IBOutlet weak var tuesdayLogo: UIImageView!
+    @IBOutlet weak var thursdayLogo: UIImageView!
+    @IBOutlet weak var wednesdayLogo: UIImageView!
+    @IBOutlet weak var fridayLogo: UIImageView!
+    @IBOutlet weak var saturdayLogo: UIImageView!
+    @IBOutlet weak var sundayLogo: UIImageView!
+    @IBOutlet weak var workoutMessageLbl: UILabel!
+    
+    @IBOutlet weak var cardioLbl: UILabel!
+    @IBOutlet weak var strengthLbl: UILabel!
+    @IBOutlet weak var stretchLbl: UILabel!
     
     //MARK:- Variables
     let viewObj = WorkoutSummaryVM()
@@ -26,27 +38,49 @@ class WorkoutSummaryVC: UIViewController {
     //MARK:- View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      todayWorkoutChartView.chartDescription?.text = ""
-        cardioDataEntry.value = Double((WorkoutDataManager.shared.myWorkoutData.cardioTime )/60)
-        stretchDataEntry.value = Double((WorkoutDataManager.shared.myWorkoutData.streatchTime )/60)
-        strengthDataEntry.value = Double((WorkoutDataManager.shared.myWorkoutData.strengthTime )/60)
         
-        numberOfWorkoutDataEntries = [cardioDataEntry,stretchDataEntry,strengthDataEntry]
-        updateChartData()
+        let req = GetSummary.request(user_id: DataManager.shared.UserID, date: Date().toString(dateFormat: "yyyy-MM-dd"), type: "get")
+        let dataDic = HelpingVC.shared.setBodyParams(request: req)
+        viewObj.saveSummary(request: dataDic) {
+            DispatchQueue.main.async {
+                self.todayWorkoutChartView.chartDescription?.text = ""
+                self.cardioDataEntry.value = Double(self.viewObj.summryData?.category?.cardio ?? 0)
+                self.stretchDataEntry.value = Double(self.viewObj.summryData?.category?.stretch ?? 0)
+                self.strengthDataEntry.value = Double(self.viewObj.summryData?.category?.strength ?? 0)
+                self.numberOfWorkoutDataEntries = [self.cardioDataEntry,self.stretchDataEntry,self.strengthDataEntry]
+                self.updateChartData()
+                self.setWeeklyGoal()
+            }
+        }
+        
+        
     }
     
-    func updateChartData(){
-        let chartDataSet = PieChartDataSet(entries:numberOfWorkoutDataEntries,label: nil)
-        let chartData = PieChartData(dataSet: chartDataSet)
-        
-        let colors = [UIColor(red: 233/255, green: 80/255, blue: 49/255, alpha: 1.0),UIColor.green,UIColor.black]
-        chartDataSet.colors = colors
-        
-        todayWorkoutChartView.data = chartData
-    }
+   
     
     //MARK:- IBActions
-  
-
+    
+    @IBAction func shareBtnClicked(_ sender: Any) {
+        let items = ["Checkout my workout summary on 'Eccentric'!"]
+        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        present(ac, animated: true)
+    }
+    
+    @IBAction func doneBtnClicked(_ sender: Any) {
+        let vcs = self.navigationController?.viewControllers
+        for vc in vcs ?? [] {
+            if vc is HomeViewController{
+                self.navigationController?.popToViewController(vc, animated: true)
+            }
+        }
+    }
+    
+    @IBAction func dismissBtnClicked(_ sender: Any) {
+        let vcs = self.navigationController?.viewControllers
+        for vc in vcs ?? [] {
+            if vc is HomeViewController{
+                self.navigationController?.popToViewController(vc, animated: true)
+            }
+        }
+    }
 }

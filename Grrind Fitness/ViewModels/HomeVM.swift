@@ -13,6 +13,8 @@ class HomeVM {
     //MARK:- Variables
     var exercises :[ExerciseData] = []
     var selectedGoals:[UserGoalsData] = []
+    var intensitySelected:String?
+    
     
     //MARK:- API Functions
     ///API to fetch all exercises depending on goals selected by user.
@@ -33,6 +35,46 @@ class HomeVM {
 }
 
 extension HomeViewController{
+    
+    func checkValidations(){
+        if minuteTF[0].text == "" || minuteTF[1].text == ""{
+             self.showAlert(message:Constants.Alert_Messages.exerciseTime)
+        }else if !standrdBtn.isSelected && !easyBtn.isSelected && !advancedBtn.isSelected{
+            self.showAlert(message:Constants.Alert_Messages.selectIntensity)
+        }else{
+            var minutes = ""
+                   for tf in minuteTF{
+                       minutes.append(tf.text ?? "")
+                   }
+                   
+                   if minutes != ""{
+                       WorkoutDataManager.shared.totalWorkoutLenght = (Int(minutes) ?? 0) * 60
+                       // self.pushToVC(vcID: "WorkoutVideoVC")
+                       var wType = ""
+                       if increaseMobilitySwitch.isOn{
+                           wType = "pre"
+                           
+                       }
+                       if reduceFatigueSwitch.isOn{
+                           wType = "post"
+                       }
+                       if increaseMobilitySwitch.isOn && reduceFatigueSwitch.isOn{
+                           wType = "both"
+                       }
+                       let req = Exercises.request(type: viewObj.intensitySelected,id: DataManager.shared.UserID,workout_type:wType)
+                       let dataDic = HelpingVC.shared.setBodyParams(request: req)
+                       viewObj.getExercises(dataDic: dataDic) {
+                           DispatchQueue.main.async {
+                               let vc = self.storyboard?.instantiateViewController(withIdentifier: "WorkoutVideoVC") as? WorkoutVideoVC
+                               vc?.viewObj.exercises = self.viewObj.exercises
+                               self.navigationController?.pushViewController(vc!, animated: true)
+                           }
+                       }
+                       
+                       
+                   }
+        }
+    }
     
     func selectIntensity(intensity:String){
         easyBtn.isSelected = false

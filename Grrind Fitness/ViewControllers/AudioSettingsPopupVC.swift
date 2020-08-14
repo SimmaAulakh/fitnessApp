@@ -9,32 +9,50 @@
 import UIKit
 
 class AudioSettingsPopupVC: UIViewController {
-    @IBOutlet weak var bgView: UIView!
     
+    //MARK:- IBOutlets
+    @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var viewBgView: UIView!
     @IBOutlet weak var view2BgView: UIView!
+    @IBOutlet weak var audioCoachingSlider: UISlider!
+    @IBOutlet weak var musicVolumeSlider: UISlider!
+    @IBOutlet weak var volumeSwitch: UISwitch!
     
+    //MARK:- Variables
+    let viewObj = AudioSettingsPopUpVM()
+    
+    //MARK:- View Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        bgView.layer.cornerRadius = 20
-        bgView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        setUI()
         
-        viewBgView.layer.cornerRadius = 10
-        viewBgView.layer.borderWidth = 1
-        viewBgView.layer.borderColor = UIColor.gray.cgColor
+        audioCoachingSlider.value = Float(WorkoutDataManager.shared.volume)
+        musicVolumeSlider.value = Float(WorkoutDataManager.shared.volume)
+        volumeSwitch.isOn = WorkoutDataManager.shared.volume > 0 
         
-        view2BgView.layer.cornerRadius = 10
-        view2BgView.layer.borderWidth = 1
-        view2BgView.layer.borderColor = UIColor.gray.cgColor
-               
     }
     
-
+    //MARK:- IBActons
     @IBAction func dismissBtnClicked(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-   
+    @IBAction func audioCoachVolumeSliderAction(_ sender: UISlider) {
+        WorkoutDataManager.shared.volume = sender.value
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "AudioVolume"), object: nil, userInfo: ["vol" : sender.value])
+    }
+    
+    @IBAction func musicVolumeSliderAction(_ sender: UISlider) {
+        WorkoutDataManager.shared.volume = sender.value
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "AudioVolume"), object: nil, userInfo: ["vol" : sender.value])
+    }
+    
+    @IBAction func volumeSwitchAction(_ sender: UISwitch) {
+        WorkoutDataManager.shared.volume = sender.isOn ? Float(0.5) : Float(0.0)
+        audioCoachingSlider.value = Float(WorkoutDataManager.shared.volume)
+        musicVolumeSlider.value = Float(WorkoutDataManager.shared.volume)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "AudioVolume"), object: nil, userInfo: ["vol" : sender.isOn ? Float(0.5) : Float(0.0)])
+        
+    }
+    
 }

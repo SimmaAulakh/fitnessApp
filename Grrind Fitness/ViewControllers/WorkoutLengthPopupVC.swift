@@ -27,6 +27,8 @@ class WorkoutLengthPopupVC: UIViewController {
         for txtf in minutesTxtFields{
             txtf.delegate = self
         }
+        
+        
        
         
        // self.view.viewWithTag(1)?.becomeFirstResponder()
@@ -45,12 +47,17 @@ class WorkoutLengthPopupVC: UIViewController {
     }
     
     @IBAction func saveChangesBtnClicked(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-        
+        if minutesTxtFields[0].text != "" && minutesTxtFields[1].text != ""{
+            
         var customerIDString = ""
            self.minutesTxtFields.forEach { (singleCustomerIDTextField) in
                customerIDString.append(singleCustomerIDTextField.text!)
            }
            print(customerIDString)
+        WorkoutDataManager.shared.totalWorkoutLenght = Int(customerIDString) ?? WorkoutDataManager.shared.totalWorkoutLenght
+         self.dismiss(animated: true, completion: nil)
+        }else{
+            self.showAlert(message: Constants.Alert_Messages.exerciseTime)
+        }
     }
 }
